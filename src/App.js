@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HomeContainer from './containers/HomeContainer/HomeContainer';
 
-function App() {
+const App = () => {
+  // Since this is a single container application, there is no need to add routing module
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header">this is my header</header>
+      <HomeContainer />
+      <footer> this is my footer</footer>
     </div>
   );
-}
+};
 
 export default App;
