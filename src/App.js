@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeContainer from './containers/HomeContainer/HomeContainer';
+import 'typeface-roboto';
 
 const App = () => {
   // Since this is a single container application, there is no need to add routing module

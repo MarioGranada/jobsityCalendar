@@ -1,23 +1,24 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import Calendar from '../../shared/components/Calendar/Calendar';
+import './HomeContainer.scss';
+import CalendarForm from '../../shared/components/CalendarForm/CalendarForm';
 
-class HomeContainer extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      users: [],
-      reminders: []
-    };
-  }
+const HomeContainer = () => {
+  const [calendarState, setCalendarState] = useState({
+    users: [],
+    reminders: []
+  });
 
-  render() {
-    return (
-      <div className="home-container">
-        <span> this is my home container</span>
-        <Calendar users={this.state.users} reminders={this.state.reminders} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="home-container">
+      <span> this is my home container</span>
+      <Calendar
+        users={calendarState.users}
+        reminders={calendarState.reminders}
+      />
+      <CalendarForm setCalendarState={setCalendarState} />
+    </div>
+  );
+};
 
 export default HomeContainer;
