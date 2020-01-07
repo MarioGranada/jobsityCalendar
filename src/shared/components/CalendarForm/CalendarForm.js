@@ -14,6 +14,7 @@ import AlgoliaPlaces from 'algolia-places-react';
 import './CalendarForm.scss';
 import classNames from 'classnames';
 import { addReminder } from '../../store/actions/reminderActions';
+import getWeatherDataByCity from '../../services/weather/weather.service';
 
 const CalendarForm = ({ selectedDate }) => {
   const dispatch = useDispatch();
@@ -124,6 +125,9 @@ const CalendarForm = ({ selectedDate }) => {
           color="primary"
           onClick={() => {
             dispatch(addReminder({ ...formState, date: selectedDate }));
+            getWeatherDataByCity('Buenos aires').then(data => {
+              console.log('weather data', data);
+            });
           }}
         >
           Add Reminder
