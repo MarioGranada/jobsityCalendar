@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import {
   TextField,
   Radio,
   RadioGroup,
   FormControl,
   FormControlLabel,
-  FormLabel
+  FormLabel,
+  Button
 } from '@material-ui/core';
 import AlgoliaPlaces from 'algolia-places-react';
 
@@ -72,6 +74,9 @@ const CalendarForm = ({ setCalendarState }) => {
             }}
           ></TextField>
         </FormControl>
+        <Button variant="contained" color="primary">
+          Add Reminder
+        </Button>
       </form>
     </div>
   );
