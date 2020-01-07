@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import {
   TextField,
   Radio,
@@ -12,29 +12,68 @@ import {
 import AlgoliaPlaces from 'algolia-places-react';
 
 import './CalendarForm.scss';
+import classNames from 'classnames';
+import { addReminder } from '../../store/actions/reminderActions';
 
-const CalendarForm = ({ setCalendarState }) => {
-  const [formState, setFormState] = useState({});
-
-  const onChangeColor = event => {
-    setFormState({ ...formState, color: event.target.value });
-  };
+const CalendarForm = ({ selectedDate }) => {
+  const dispatch = useDispatch();
+  const [formState, setFormState] = useState({
+    time: '07:30',
+    color: 'red',
+    title: '',
+    city: '',
+    username: ''
+  });
 
   return (
-    <div className="calendar-form-container">
+    <div
+      className={classNames('calendar-form-container', {
+        shouldDisplayForm: !!selectedDate
+      })}
+    >
       <form noValidate autoComplete="off">
+        <FormControl>
+          <TextField
+            disabled
+            label="Date"
+            value={selectedDate}
+            inputProps={{
+              readOnly: true
+            }}
+            onChange={e => {
+              setFormState({ ...formState, date: e.target.value });
+            }}
+          />
+        </FormControl>
+        <FormControl>
+          <TextField
+            label="Username"
+            onChange={e => {
+              setFormState({ ...formState, username: e.target.value });
+              console.log('username in form', formState);
+            }}
+          />
+        </FormControl>
         <FormControl>
           <TextField
             label="Reminder title"
             inputProps={{
               maxLength: 30
             }}
+            onChange={e => {
+              setFormState({ ...formState, title: e.target.value });
+            }}
           />
         </FormControl>
 
         <FormControl>
           <FormLabel component="legend">Priority level (color)</FormLabel>
-          <RadioGroup onChange={onChangeColor}>
+          <RadioGroup
+            onChange={e => {
+              setFormState({ ...formState, color: e.target.value });
+            }}
+            value={formState.color}
+          >
             <FormControlLabel
               value="red"
               control={<Radio />}
@@ -59,22 +98,34 @@ const CalendarForm = ({ setCalendarState }) => {
             placeholder="Preferred city"
             language="en"
             type="city"
+            onChange={({ suggestion }) => {
+              setFormState({ ...formState, city: suggestion.name });
+            }}
           ></AlgoliaPlaces>
         </FormControl>
 
         <FormControl>
           <TextField
             type="time"
-            defaultValue="07:30"
+            defaultValue={formState.time}
             InputLabelProps={{
               shrink: true
             }}
             inputProps={{
               step: 300 // 5 min
             }}
-          ></TextField>
+            onChange={e => {
+              setFormState({ ...formState, time: e.target.value });
+            }}
+          />
         </FormControl>
-        <Button variant="contained" color="primary">
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => {
+            dispatch(addReminder({ ...formState, date: selectedDate }));
+          }}
+        >
           Add Reminder
         </Button>
       </form>
