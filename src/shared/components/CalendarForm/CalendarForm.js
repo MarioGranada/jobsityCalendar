@@ -125,9 +125,6 @@ const CalendarForm = ({ selectedDate }) => {
           color="primary"
           onClick={() => {
             dispatch(addReminder({ ...formState, date: selectedDate }));
-            getWeatherDataByCity('Buenos aires').then(data => {
-              console.log('weather data', data);
-            });
           }}
         >
           Add Reminder
