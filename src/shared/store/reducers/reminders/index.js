@@ -30,18 +30,20 @@ const remindersReducer = (state = initialState, action) => {
       reminders = state.reminders[updatedReminder.date].filter(
         item => item.id !== updatedReminder.id
       );
+      debugger;
       dateSchedule = {};
       dateSchedule[updatedReminder.date] = [...reminders, updatedReminder];
-
+      debugger;
       return { ...state, reminders: { ...state.reminders, ...dateSchedule } };
 
     case actionTypes.REMOVE_REMINDER:
-      reminders = state.reminders[updatedReminder.date].filter(
-        item => item.id !== updatedReminder.id
+      const removeReminder = action.payload.reminder;
+      reminders = state.reminders[removeReminder.date].filter(
+        item => item.id !== removeReminder.id
       );
 
       dateSchedule = {};
-      dateSchedule[updatedReminder.date] = reminders;
+      dateSchedule[removeReminder.date] = reminders;
 
       return {
         ...state,
@@ -56,6 +58,12 @@ const remindersReducer = (state = initialState, action) => {
         ...state,
         reminders: { ...currentDateSchedules }
       };
+
+    case actionTypes.OPEN_MODAL:
+      return { ...state, shouldDisplayModal: true };
+
+    case actionTypes.CLOSE_MODAL:
+      return { ...state, shouldDisplayModal: false };
 
     default:
       return state;

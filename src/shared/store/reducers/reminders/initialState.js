@@ -1,4 +1,4 @@
 export default {
   reminders: {},
-  currentReminder: null
+  shouldDisplayModal: false
 };

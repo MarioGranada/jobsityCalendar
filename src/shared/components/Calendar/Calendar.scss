@@ -1,7 +1,21 @@
+.jobsity-calendar-container {
+  text-align: center;
+}
+
 .day-box {
   overflow: scroll;
-  max-width: 300px;
-  max-height: 300px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.DayPicker-Day {
+  border: 1px solid;
+}
+
+.date-buttons-row {
+  justify-content: space-between;
 }
 
 .date-reminders-container {
@@ -9,4 +23,23 @@
   max-width: 100px;
   max-height: 100px;
   display: block;
+  text-align: left;
+}
+
+.calendar-icon {
+  color: #3f51b5;
+  cursor: pointer;
+  width: 14px;
+  vertical-align: middle;
+}
+
+.clear-date-label {
+  font-size: 12px;
+  color: #8b9898;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.clear-icon {
+  color: #8b9898;
 }

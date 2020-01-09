@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   TextField,
   Radio,
@@ -7,130 +7,168 @@ import {
   FormControl,
   FormControlLabel,
   FormLabel,
-  Button
+  Button,
+  Modal
 } from '@material-ui/core';
 import AlgoliaPlaces from 'algolia-places-react';
-
 import './CalendarForm.scss';
-import classNames from 'classnames';
-import { addReminder } from '../../store/actions/reminderActions';
-import getWeatherDataByCity from '../../services/weather/weather.service';
 
-const CalendarForm = ({ selectedDate }) => {
+import {
+  addReminder,
+  updateReminder,
+  closeModal
+} from '../../store/actions/reminderActions';
+
+const CalendarForm = ({
+  selectedDate,
+  selectedReminder,
+  isUpdatingReminder
+}) => {
   const dispatch = useDispatch();
-  const [formState, setFormState] = useState({
-    time: '07:30',
-    color: 'red',
-    title: '',
-    city: '',
-    username: ''
-  });
+  const initialFormState = isUpdatingReminder
+    ? selectedReminder
+    : {
+        time: '07:30',
+        title: '',
+        username: '',
+        color: ''
+      };
+  const [formState, setFormState] = useState(initialFormState);
+
+  const [selectedCity, setSelectedCity] = useState(initialFormState.city || '');
+
+  const isModalOpen = useSelector(state => state.reminders.shouldDisplayModal);
 
   return (
-    <div
-      className={classNames('calendar-form-container', {
-        shouldDisplayForm: !!selectedDate
-      })}
-    >
-      <form noValidate autoComplete="off">
-        <FormControl>
-          <TextField
-            disabled
-            label="Date"
-            value={selectedDate}
-            inputProps={{
-              readOnly: true
-            }}
-            onChange={e => {
-              setFormState({ ...formState, date: e.target.value });
-            }}
-          />
-        </FormControl>
-        <FormControl>
-          <TextField
-            label="Username"
-            onChange={e => {
-              setFormState({ ...formState, username: e.target.value });
-              console.log('username in form', formState);
-            }}
-          />
-        </FormControl>
-        <FormControl>
-          <TextField
-            label="Reminder title"
-            inputProps={{
-              maxLength: 30
-            }}
-            onChange={e => {
-              setFormState({ ...formState, title: e.target.value });
-            }}
-          />
-        </FormControl>
-
-        <FormControl>
-          <FormLabel component="legend">Priority level (color)</FormLabel>
-          <RadioGroup
-            onChange={e => {
-              setFormState({ ...formState, color: e.target.value });
-            }}
-            value={formState.color}
-          >
-            <FormControlLabel
-              value="red"
-              control={<Radio />}
-              label="High Priority"
+    <Modal open={isModalOpen}>
+      <div className="calendar-form-container">
+        <form noValidate autoComplete="off">
+          <FormControl className="calendar-form-control">
+            <TextField
+              disabled
+              label="Date"
+              value={selectedDate}
+              inputProps={{
+                readOnly: true
+              }}
             />
-            <FormControlLabel
-              value="yellow"
-              control={<Radio />}
-              label="Priority"
+          </FormControl>
+          <FormControl className="calendar-form-control">
+            <TextField
+              label="Username"
+              value={formState.username}
+              onChange={e => {
+                setFormState({ ...formState, username: e.target.value });
+                console.log('in here', formState);
+              }}
             />
-            <FormControlLabel
-              value="green"
-              control={<Radio />}
-              label="Low Priority"
+          </FormControl>
+          <FormControl className="calendar-form-control">
+            <TextField
+              label="Reminder title"
+              inputProps={{
+                maxLength: 30
+              }}
+              onChange={e => {
+                setFormState({ ...formState, title: e.target.value });
+                console.log('in here', formState);
+              }}
+              value={formState.title}
             />
-          </RadioGroup>
-        </FormControl>
+          </FormControl>
 
-        <FormControl>
-          <FormLabel component="legend">City</FormLabel>
-          <AlgoliaPlaces
-            placeholder="Preferred city"
-            language="en"
-            type="city"
-            onChange={({ suggestion }) => {
-              setFormState({ ...formState, city: suggestion.name });
-            }}
-          ></AlgoliaPlaces>
-        </FormControl>
+          <FormControl className="calendar-form-control">
+            <AlgoliaPlaces
+              placeholder="Preferred city"
+              language="en"
+              type="city"
+              onChange={({ suggestion }) => {
+                console.log('in here city before', formState);
+                // setFormState({ ...formState, city: suggestion.name });
+                setSelectedCity(suggestion.name);
+                console.log('in here city', formState);
+              }}
+            />
+          </FormControl>
+          <FormControl className="calendar-form-control">
+            <TextField
+              type="time"
+              defaultValue={formState.time}
+              InputLabelProps={{
+                shrink: true
+              }}
+              inputProps={{
+                step: 300 // 5 min
+              }}
+              onChange={e => {
+                setFormState({ ...formState, time: e.target.value });
+              }}
+            />
+          </FormControl>
 
-        <FormControl>
-          <TextField
-            type="time"
-            defaultValue={formState.time}
-            InputLabelProps={{
-              shrink: true
-            }}
-            inputProps={{
-              step: 300 // 5 min
-            }}
-            onChange={e => {
-              setFormState({ ...formState, time: e.target.value });
-            }}
-          />
-        </FormControl>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => {
-            dispatch(addReminder({ ...formState, date: selectedDate }));
-          }}
-        >
-          Add Reminder
-        </Button>
-      </form>
-    </div>
+          <FormControl className="calendar-form-control">
+            <FormLabel component="legend">Priority level (color)</FormLabel>
+            <RadioGroup
+              onChange={e => {
+                setFormState({ ...formState, color: e.target.value });
+                e.stopPropagation();
+              }}
+              value={formState.color}
+            >
+              <FormControlLabel
+                value="red"
+                control={<Radio />}
+                label="High Priority"
+              />
+              <FormControlLabel
+                value="yellow"
+                control={<Radio />}
+                label="Priority"
+              />
+              <FormControlLabel
+                value="green"
+                control={<Radio />}
+                label="Low Priority"
+              />
+            </RadioGroup>
+          </FormControl>
+
+          <div className="buttons-row">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                dispatch(
+                  isUpdatingReminder
+                    ? updateReminder({
+                        ...selectedReminder,
+                        ...formState,
+                        date: selectedDate,
+                        city: selectedCity
+                      })
+                    : addReminder({
+                        ...formState,
+                        date: selectedDate,
+                        city: selectedCity
+                      })
+                );
+                dispatch(closeModal());
+              }}
+            >
+              Add Reminder
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => {
+                dispatch(closeModal());
+              }}
+            >
+              Cancel
+            </Button>
+          </div>
+        </form>
+      </div>
+    </Modal>
   );
 };
 

@@ -6,15 +6,22 @@ import CalendarForm from '../CalendarForm/CalendarForm';
 
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import DeleteIcon from '@material-ui/icons/Delete';
+import HighlightOffRoundedIcon from '@material-ui/icons/HighlightOffRounded';
+import EditIcon from '@material-ui/icons/Edit';
+
 import { useSelector, useDispatch } from 'react-redux';
-import { removeRemindersByDate } from '../../store/actions/reminderActions';
+import {
+  removeRemindersByDate,
+  removeReminder,
+  openModal
+} from '../../store/actions/reminderActions';
 
 const Calendar = () => {
   const dispatch = useDispatch();
-  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedDate, setSelectedDate] = useState(null);
   const [isUpdatingReminder, setIsUpdatingReminder] = useState(false);
 
-  const [selectedReminder, setSelectedReminder] = useState({});
+  const [selectedReminder, setSelectedReminder] = useState(null);
 
   const reminders = useSelector(state => state.reminders.reminders);
 
@@ -25,26 +32,51 @@ const Calendar = () => {
         <span>{day.getDate()}</span>
         <br />
 
-        <span>
+        <div className="date-buttons-row">
           <AddCircleIcon
             variant="primary"
             onClick={() => {
               onCalendarDateClick(day);
             }}
+            className="calendar-icon"
           />
-          <DeleteIcon
-            variant="primary"
+          <span
+            className="clear-date-label"
             onClick={() => {
               dispatch(removeRemindersByDate(formattedDay));
             }}
-          />
-        </span>
+          >
+            Clear{' '}
+            <HighlightOffRoundedIcon
+              variant="primary"
+              className="calendar-icon clear-icon"
+            />
+          </span>
+        </div>
         <br />
         <div className="date-reminders-container">
           {reminders[formattedDay] &&
             reminders[formattedDay].map(item => (
-              <div className="date-title" key={item.id}>
-                {item.title}
+              <div className="reminder-container" key={item.id}>
+                <div className="date-title">{item.title}</div>
+                <div className="reminder-buttons-row">
+                  <EditIcon
+                    onClick={() => {
+                      debugger;
+                      setSelectedReminder(item);
+                      setSelectedDate(formattedDay);
+                      setIsUpdatingReminder(true);
+                      dispatch(openModal());
+                    }}
+                    className="calendar-icon"
+                  />
+                  <DeleteIcon
+                    onClick={() => {
+                      dispatch(removeReminder(item));
+                    }}
+                    className="calendar-icon"
+                  />
+                </div>
               </div>
             ))}
         </div>
@@ -54,15 +86,23 @@ const Calendar = () => {
 
   const onCalendarDateClick = day => {
     setSelectedDate(day.toLocaleDateString().replace(/\//g, '-'));
+    setSelectedReminder(null);
+    setIsUpdatingReminder(false);
+    dispatch(openModal());
+    debugger;
   };
 
   return (
-    <div>
-      <DayPicker showOutsideDays renderDay={calendarDay} />
+    <div className="jobsity-calendar-container">
+      <DayPicker
+        showOutsideDays
+        renderDay={calendarDay}
+        fromMonth={new Date()}
+      />
       <CalendarForm
-        isUpdating={isUpdatingReminder}
+        isUpdatingReminder={isUpdatingReminder}
         selectedDate={selectedDate}
-        selectedReminder={selectedReminder}
+        selectedReminder={selectedReminder || null}
       />
     </div>
   );

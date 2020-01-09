@@ -24,3 +24,11 @@ export const removeRemindersByDate = date => ({
   type: actionTypes.REMOVE_REMINDERS_BY_DATE,
   payload: { date }
 });
+
+export const openModal = () => ({
+  type: actionTypes.OPEN_MODAL
+});
+
+export const closeModal = () => ({
+  type: actionTypes.CLOSE_MODAL
+});

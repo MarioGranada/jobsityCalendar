@@ -1,6 +1,42 @@
 .calendar-form-container {
-  display: none;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 25px;
+  display: flex;
 }
-.shouldDisplayForm {
+form {
+  justify-content: space-between;
   display: block;
+  width: 100%;
+}
+.MuiFormControl-root.calendar-form-control {
+  margin: 15px;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+
+.buttons-row {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.buttons-row button {
+  margin: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .calendar-form-container {
+    margin: 15px;
+  }
+  .MuiFormControl-root.calendar-form-control {
+    width: calc(100% - 15px);
+  }
+}
+@media (min-width: 768px) {
+  .calendar-form-container {
+    margin: 25px auto;
+  }
+  .MuiFormControl-root.calendar-form-control {
+    width: calc(50% - 30px);
+  }
 }
