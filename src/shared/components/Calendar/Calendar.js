@@ -20,7 +20,7 @@ const Calendar = () => {
 
   const [selectedReminder, setSelectedReminder] = useState(null);
 
-  const reminders = useSelector(state => state.reminders.reminders);
+  const reminders = useSelector(state => state.reminders.items);
 
   const calendarDay = day => {
     const formattedDay = day.toLocaleDateString().replace(/\//g, '-');

@@ -9,8 +9,8 @@ const remindersReducer = (state = initialState, action) => {
       return state; // return current list of reminders
     case actionTypes.ADD_REMINDER:
       const newReminder = action.payload.reminder;
-      let currentRemindersByDate = state.reminders[newReminder.date]
-        ? state.reminders[newReminder.date]
+      let currentRemindersByDate = state.items[newReminder.date]
+        ? state.items[newReminder.date]
         : [];
       dateSchedule = {};
       dateSchedule[newReminder.date] = [
@@ -23,22 +23,22 @@ const remindersReducer = (state = initialState, action) => {
 
       return {
         ...state,
-        reminders: { ...state.reminders, ...dateSchedule }
+        items: { ...state.items, ...dateSchedule }
       };
     case actionTypes.UPDATE_REMINDER:
       const updatedReminder = action.payload.reminder;
-      reminders = state.reminders[updatedReminder.date].filter(
+      reminders = state.items[updatedReminder.date].filter(
         item => item.id !== updatedReminder.id
       );
 
       dateSchedule = {};
       dateSchedule[updatedReminder.date] = [...reminders, updatedReminder];
 
-      return { ...state, reminders: { ...state.reminders, ...dateSchedule } };
+      return { ...state, items: { ...state.items, ...dateSchedule } };
 
     case actionTypes.REMOVE_REMINDER:
       const removeReminder = action.payload.reminder;
-      reminders = state.reminders[removeReminder.date].filter(
+      reminders = state.items[removeReminder.date].filter(
         item => item.id !== removeReminder.id
       );
 
@@ -47,16 +47,16 @@ const remindersReducer = (state = initialState, action) => {
 
       return {
         ...state,
-        reminders: { ...state.reminders, ...dateSchedule }
+        items: { ...state.items, ...dateSchedule }
       };
 
     case actionTypes.REMOVE_REMINDERS_BY_DATE:
-      const currentDateSchedules = { ...state.reminders };
+      const currentDateSchedules = { ...state.items };
       delete currentDateSchedules[action.payload.date];
 
       return {
         ...state,
-        reminders: { ...currentDateSchedules }
+        items: { ...currentDateSchedules }
       };
 
     case actionTypes.OPEN_MODAL:
