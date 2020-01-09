@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should be rendered 1`] = `
+<div
+  className="header-container"
+>
+  <a
+    className="header-brand"
+    href="/"
+  >
+    <img
+      alt="Jobsity-calendar-header-logo"
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+  </a>
+</div>
+`;

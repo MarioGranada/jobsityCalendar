@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   TextField,
@@ -33,7 +33,7 @@ const CalendarForm = ({
 
   const isModalOpen = useSelector(state => state.reminders.shouldDisplayModal);
 
-  // const cityInput = useRef(selectedCity || '');
+  const cityInput = useRef(selectedCity || '');
 
   useEffect(() => {
     const initialFormState = isUpdatingReminder
@@ -91,9 +91,7 @@ const CalendarForm = ({
               onChange={({ suggestion }) => {
                 setSelectedCity(suggestion.name);
               }}
-              placesRef={ref => {
-                ref.value = 'London';
-              }}
+              placesRef={cityInput}
             />
           </FormControl>
           <FormControl className="calendar-form-control">

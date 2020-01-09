@@ -1,6 +1,5 @@
 import React from 'react';
 import HomeContainer from './containers/HomeContainer/HomeContainer';
-import 'typeface-roboto';
 import Header from './shared/components/Header/Header';
 import Footer from './shared/components/Footer/Footer';
 
