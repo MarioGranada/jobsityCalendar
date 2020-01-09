@@ -30,10 +30,10 @@ const remindersReducer = (state = initialState, action) => {
       reminders = state.reminders[updatedReminder.date].filter(
         item => item.id !== updatedReminder.id
       );
-      debugger;
+
       dateSchedule = {};
       dateSchedule[updatedReminder.date] = [...reminders, updatedReminder];
-      debugger;
+
       return { ...state, reminders: { ...state.reminders, ...dateSchedule } };
 
     case actionTypes.REMOVE_REMINDER:

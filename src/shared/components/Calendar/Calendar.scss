@@ -43,3 +43,22 @@
 .clear-icon {
   color: #8b9898;
 }
+.date-title {
+  background: rgb(198, 218, 252);
+  border-color: rgb(198, 218, 252);
+  border-radius: 4px;
+  outline: none;
+  padding: 5px;
+  margin: 1px 0;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.DayPicker-Day {
+  padding: 0.3em;
+}
+
+.DayPicker-Day.DayPicker-Day--today .date-reminders-container {
+  color: #000;
+  font-weight: 400;
+}

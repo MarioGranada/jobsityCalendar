@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   TextField,
@@ -16,7 +16,8 @@ import './CalendarForm.scss';
 import {
   addReminder,
   updateReminder,
-  closeModal
+  closeModal,
+  removeReminder
 } from '../../store/actions/reminderActions';
 
 const CalendarForm = ({
@@ -25,19 +26,26 @@ const CalendarForm = ({
   isUpdatingReminder
 }) => {
   const dispatch = useDispatch();
-  const initialFormState = isUpdatingReminder
-    ? selectedReminder
-    : {
-        time: '07:30',
-        title: '',
-        username: '',
-        color: ''
-      };
-  const [formState, setFormState] = useState(initialFormState);
 
-  const [selectedCity, setSelectedCity] = useState(initialFormState.city || '');
+  const [formState, setFormState] = useState({});
+
+  const [selectedCity, setSelectedCity] = useState('');
 
   const isModalOpen = useSelector(state => state.reminders.shouldDisplayModal);
+
+  const cityInput = useRef(selectedCity || '');
+
+  useEffect(() => {
+    const initialFormState = isUpdatingReminder
+      ? selectedReminder
+      : {
+          time: '07:30',
+          title: '',
+          username: '',
+          color: ''
+        };
+    setFormState(initialFormState);
+  }, [selectedDate, selectedReminder, isUpdatingReminder, setFormState]);
 
   return (
     <Modal open={isModalOpen}>
@@ -59,7 +67,6 @@ const CalendarForm = ({
               value={formState.username}
               onChange={e => {
                 setFormState({ ...formState, username: e.target.value });
-                console.log('in here', formState);
               }}
             />
           </FormControl>
@@ -71,7 +78,6 @@ const CalendarForm = ({
               }}
               onChange={e => {
                 setFormState({ ...formState, title: e.target.value });
-                console.log('in here', formState);
               }}
               value={formState.title}
             />
@@ -83,10 +89,10 @@ const CalendarForm = ({
               language="en"
               type="city"
               onChange={({ suggestion }) => {
-                console.log('in here city before', formState);
-                // setFormState({ ...formState, city: suggestion.name });
                 setSelectedCity(suggestion.name);
-                console.log('in here city', formState);
+              }}
+              placesRef={ref => {
+                ref.value = 'London';
               }}
             />
           </FormControl>
@@ -111,7 +117,6 @@ const CalendarForm = ({
             <RadioGroup
               onChange={e => {
                 setFormState({ ...formState, color: e.target.value });
-                e.stopPropagation();
               }}
               value={formState.color}
             >
@@ -157,6 +162,18 @@ const CalendarForm = ({
             >
               Add Reminder
             </Button>
+            {isUpdatingReminder ? (
+              <Button
+                variant="outlined"
+                color="secondary"
+                onClick={() => {
+                  dispatch(removeReminder(selectedReminder));
+                  dispatch(closeModal());
+                }}
+              >
+                Delete
+              </Button>
+            ) : null}
             <Button
               variant="outlined"
               onClick={() => {
