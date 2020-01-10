@@ -15,6 +15,16 @@ form {
   display: inline-flex;
 }
 
+.current-city {
+  margin: 15px 0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.current-city span {
+  display: flex;
+}
+
 .buttons-row {
   display: inline-flex;
   justify-content: space-between;

@@ -82,6 +82,13 @@ const CalendarForm = ({
           </FormControl>
 
           <FormControl className="calendar-form-control">
+            {isUpdatingReminder ? (
+              <div className="current-city">
+                <div>City: {selectedCity}</div>
+
+                <div>Current weather: {selectedCity}</div>
+              </div>
+            ) : null}
             <AlgoliaPlaces
               placeholder="Preferred city"
               language="en"
@@ -93,6 +100,7 @@ const CalendarForm = ({
           </FormControl>
           <FormControl className="calendar-form-control">
             <TextField
+              label="Time"
               type="time"
               defaultValue={formState.time}
               InputLabelProps={{
