@@ -43,6 +43,7 @@ const CalendarForm = ({
           color: 'red'
         };
     setFormState(initialFormState);
+    setSelectedCity((selectedReminder && selectedReminder.city) || '');
   }, [selectedDate, selectedReminder, isUpdatingReminder]);
 
   return (
