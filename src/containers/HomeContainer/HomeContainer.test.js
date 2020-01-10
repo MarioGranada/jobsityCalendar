@@ -23,6 +23,7 @@ describe('HomeContainer [Container]', () => {
         <HomeContainer />
       </Provider>
     );
+
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

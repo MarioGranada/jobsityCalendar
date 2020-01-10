@@ -29,9 +29,18 @@ const store = mockStore({
   }
 });
 
+let component;
+
 describe('Calendar [Component]', () => {
+  beforeEach(() => {
+    component = mount(
+      <Provider store={store}>
+        <Calendar />
+      </Provider>
+    );
+  });
   it('should be rendered', () => {
-    const component = renderer.create(
+    component = renderer.create(
       <Provider store={store}>
         <Calendar />
       </Provider>
@@ -41,52 +50,22 @@ describe('Calendar [Component]', () => {
   });
 
   it('should have a CalendarForm component', () => {
-    const component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     expect(component.find(CalendarForm).length).toEqual(1);
   });
 
   it('should have a DayPicker component', () => {
-    const component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     expect(component.find(DayPicker).length).toEqual(1);
   });
 
   it('should have multiple add icons', () => {
-    const component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     expect(component.find(AddCircleIcon).length).not.toEqual(0);
   });
 
   it('should have multiple Clear icons', () => {
-    const component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     expect(component.find(HighlightOffRoundedIcon).length).not.toEqual(0);
   });
 
   it('should select given date when an add icon is clicked', () => {
-    const component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     const firstAddCircleIcon = component.find(AddCircleIcon).first();
 
     firstAddCircleIcon.simulate('click');
@@ -99,12 +78,6 @@ describe('Calendar [Component]', () => {
   });
 
   it('should open a modal when an add icon is clicked', () => {
-    const component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     sinon.spy(actions, 'openModal');
 
     const firstAddCircleIcon = component.find(AddCircleIcon).first();
@@ -115,12 +88,6 @@ describe('Calendar [Component]', () => {
   });
 
   it('should remove all reminders for a given date when a clear button is clicked', () => {
-    let component = mount(
-      <Provider store={store}>
-        <Calendar />
-      </Provider>
-    );
-
     sinon.spy(actions, 'removeRemindersByDate');
 
     const selectedDate = '1-9-2020';

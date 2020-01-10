@@ -18,9 +18,18 @@ const store = mockStore({
   reminders: { items: {}, shouldDisplayModal: false }
 });
 
+let component;
+
 describe('App', () => {
+  beforeEach(() => {
+    component = mount(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+  });
   test('should be rendered', () => {
-    const component = renderer.create(
+    component = renderer.create(
       <Provider store={store}>
         <App />
       </Provider>
@@ -30,32 +39,14 @@ describe('App', () => {
   });
 
   test('should have a Home Container', () => {
-    const component = mount(
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-
     expect(component.find(HomeContainer).length).toEqual(1);
   });
 
   test('should have a Header', () => {
-    const component = mount(
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-
     expect(component.find(Header).length).toEqual(1);
   });
 
   test('should have a Footer', () => {
-    const component = mount(
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-
     expect(component.find(Footer).length).toEqual(1);
   });
 });
