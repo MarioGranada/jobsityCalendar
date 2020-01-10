@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Important disclaimer
 Main code is at `develop` branch which is intended to be merged into `master` at a given tag/version point as per any real product project scenario.
 
+Remind also to activate `CORS` plugin/extension in you given browser so all features work properly (i.e. extenral APIs)
+
 ## Available Scripts
 
 In the project directory, you can run:
