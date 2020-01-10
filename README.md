@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using `yarn`.
 
 ### Important disclaimer
-Main code is at `develop` branch which is intended to be merged into `master` at a given tag/version point.
+Main code is at `develop` branch which is intended to be merged into `master` at a given tag/version point as per any real product project scenario.
 
 ## Available Scripts
 
