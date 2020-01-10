@@ -19,6 +19,7 @@ import {
   closeModal,
   removeReminder
 } from '../../store/actions/reminderActions';
+import getWeatherDataByCity from '../../services/weather/weather.service';
 
 const CalendarForm = ({
   selectedDate,
@@ -30,6 +31,8 @@ const CalendarForm = ({
   const [formState, setFormState] = useState({});
 
   const [selectedCity, setSelectedCity] = useState('');
+
+  const [cityForecast, setCityForecast] = useState('');
 
   const isModalOpen = useSelector(state => state.reminders.shouldDisplayModal);
 
@@ -45,6 +48,16 @@ const CalendarForm = ({
     setFormState(initialFormState);
     setSelectedCity((selectedReminder && selectedReminder.city) || '');
   }, [selectedDate, selectedReminder, isUpdatingReminder]);
+
+  useEffect(() => {
+    if (selectedCity) {
+      getWeatherDataByCity(selectedCity).then(({ data }) => {
+        setCityForecast(data.weather[0]);
+      });
+    } else {
+      setCityForecast(null);
+    }
+  }, [selectedCity]);
 
   return (
     <Modal open={isModalOpen}>
@@ -83,13 +96,22 @@ const CalendarForm = ({
           </FormControl>
 
           <FormControl className="calendar-form-control">
-            {isUpdatingReminder ? (
-              <div className="current-city">
-                <div>City: {selectedCity}</div>
-
-                <div>Current weather: {selectedCity}</div>
+            <div className="current-city">
+              <div>City: {selectedCity}</div>
+              <div>
+                City Forecast:{' '}
+                {cityForecast ? (
+                  <span>
+                    {cityForecast.main} - {cityForecast.description}{' '}
+                    <img
+                      src={`http://openweathermap.org/img/w/${cityForecast.icon}.png`}
+                      alt="forecast_icon"
+                    />
+                  </span>
+                ) : null}
               </div>
-            ) : null}
+            </div>
+
             <AlgoliaPlaces
               placeholder="Preferred city"
               language="en"

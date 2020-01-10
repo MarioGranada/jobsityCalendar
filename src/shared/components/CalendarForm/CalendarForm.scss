@@ -22,7 +22,11 @@ form {
 }
 
 .current-city span {
-  display: flex;
+  display: inline-block;
+}
+
+.current-city span img {
+  vertical-align: middle;
 }
 
 .buttons-row {

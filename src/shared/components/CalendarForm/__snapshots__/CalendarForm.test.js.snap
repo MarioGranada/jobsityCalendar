@@ -127,6 +127,18 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                     <div
                       class="MuiFormControl-root calendar-form-control"
                     >
+                      <div
+                        class="current-city"
+                      >
+                        <div>
+                          City: 
+                          
+                        </div>
+                        <div>
+                          City Forecast:
+                           
+                        </div>
+                      </div>
                       <div>
                         <span
                           class="algolia-places"
@@ -1287,6 +1299,17 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                       <div
                         className="MuiFormControl-root calendar-form-control"
                       >
+                        <div
+                          className="current-city"
+                        >
+                          <div>
+                            City: 
+                          </div>
+                          <div>
+                            City Forecast:
+                             
+                          </div>
+                        </div>
                         <AlgoliaPlaces
                           language="en"
                           onChange={[Function]}
