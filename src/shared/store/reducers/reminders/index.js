@@ -19,7 +19,7 @@ const remindersReducer = (state = initialState, action) => {
           ...newReminder,
           id: newReminder.date + '_' + currentRemindersByDate.length
         }
-      ];
+      ].sort((a, b) => a.time.localeCompare(b.time));
 
       return {
         ...state,
@@ -32,7 +32,10 @@ const remindersReducer = (state = initialState, action) => {
       );
 
       dateSchedule = {};
-      dateSchedule[updatedReminder.date] = [...reminders, updatedReminder];
+      dateSchedule[updatedReminder.date] = [
+        ...reminders,
+        updatedReminder
+      ].sort((a, b) => a.time.localeCompare(b.time));
 
       return { ...state, items: { ...state.items, ...dateSchedule } };
 

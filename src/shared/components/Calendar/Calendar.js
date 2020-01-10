@@ -25,7 +25,7 @@ const Calendar = () => {
   const calendarDay = day => {
     const formattedDay = day.toLocaleDateString().replace(/\//g, '-');
     return (
-      <div className="day-box">
+      <div className="day-box" id={'day-box_' + formattedDay}>
         <span>{day.getDate()}</span>
         <br />
 
@@ -36,6 +36,7 @@ const Calendar = () => {
               onCalendarDateClick(day);
             }}
             className="calendar-icon"
+            label={formattedDay}
           />
           <span
             className="clear-date-label"
@@ -55,7 +56,7 @@ const Calendar = () => {
           {reminders[formattedDay] &&
             reminders[formattedDay].map(item => (
               <div
-                className="date-title"
+                className={`date-title ${item.color}`}
                 onClick={() => {
                   setSelectedReminder(item);
                   setSelectedDate(formattedDay);
