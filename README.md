@@ -11,6 +11,7 @@ In the project directory, you can run:
 Installs all project dependency.
 
 ### `yarn start`
+#### or
 ### `npm start`
 
 Runs the app in the development mode.<br />
