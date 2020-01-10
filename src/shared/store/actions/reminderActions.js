@@ -1,8 +1,7 @@
 import * as actionTypes from '../actionTypes/remindersActionTypes';
 
-export const fetchReminders = reminders => ({
-  type: actionTypes.FETCH_REMINDERS,
-  payload: { reminders }
+export const fetchReminders = () => ({
+  type: actionTypes.FETCH_REMINDERS
 });
 
 export const addReminder = reminder => ({
