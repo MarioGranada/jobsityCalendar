@@ -66,7 +66,7 @@ const CalendarForm = ({
           <FormControl className="calendar-form-control">
             <TextField
               disabled
-              label="Date"
+              label="Date *"
               value={selectedDate}
               inputProps={{
                 readOnly: true
@@ -80,6 +80,8 @@ const CalendarForm = ({
               onChange={e => {
                 setFormState({ ...formState, username: e.target.value });
               }}
+              error={!formState.username}
+              helperText="Required *"
             />
           </FormControl>
           <FormControl className="calendar-form-control">
@@ -92,6 +94,8 @@ const CalendarForm = ({
                 setFormState({ ...formState, title: e.target.value });
               }}
               value={formState.title}
+              error={!formState.title}
+              helperText="Required *"
             />
           </FormControl>
 
@@ -113,17 +117,20 @@ const CalendarForm = ({
             </div>
 
             <AlgoliaPlaces
-              placeholder="Preferred city"
+              placeholder="Preferred city *"
               language="en"
               type="city"
               onChange={({ suggestion }) => {
                 setSelectedCity(suggestion.name);
               }}
+              onClear={() => {
+                setSelectedCity('');
+              }}
             />
           </FormControl>
           <FormControl className="calendar-form-control">
             <TextField
-              label="Time"
+              label="Time *"
               type="time"
               defaultValue={formState.time}
               InputLabelProps={{
@@ -139,7 +146,7 @@ const CalendarForm = ({
           </FormControl>
 
           <FormControl className="calendar-form-control">
-            <FormLabel component="legend">Priority level (color)</FormLabel>
+            <FormLabel component="legend">Priority level (color) *</FormLabel>
             <RadioGroup
               onChange={e => {
                 setFormState({ ...formState, color: e.target.value });
@@ -185,6 +192,10 @@ const CalendarForm = ({
                 );
                 dispatch(closeModal());
               }}
+              disabled={
+                !formState.title || !formState.username || !selectedCity
+              }
+              //Other fields no need validation since they are prepopulated and use default values
             >
               {isUpdatingReminder ? 'Update Reminder' : 'Add Reminder'}
             </Button>

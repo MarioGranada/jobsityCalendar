@@ -59,7 +59,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled MuiFormLabel-filled"
                           data-shrink="true"
                         >
-                          Date
+                          Date *
                         </label>
                         <div
                           class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl"
@@ -82,21 +82,26 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         class="MuiFormControl-root MuiTextField-root"
                       >
                         <label
-                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-error Mui-error"
                           data-shrink="false"
                         >
                           Username
                         </label>
                         <div
-                          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                          class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
                         >
                           <input
-                            aria-invalid="false"
+                            aria-invalid="true"
                             class="MuiInputBase-input MuiInput-input"
                             type="text"
                             value=""
                           />
                         </div>
+                        <p
+                          class="MuiFormHelperText-root Mui-error"
+                        >
+                          Required *
+                        </p>
                       </div>
                     </div>
                     <div
@@ -106,22 +111,27 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         class="MuiFormControl-root MuiTextField-root"
                       >
                         <label
-                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-error Mui-error"
                           data-shrink="false"
                         >
                           Reminder title
                         </label>
                         <div
-                          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                          class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
                         >
                           <input
-                            aria-invalid="false"
+                            aria-invalid="true"
                             class="MuiInputBase-input MuiInput-input"
                             maxlength="30"
                             type="text"
                             value=""
                           />
                         </div>
+                        <p
+                          class="MuiFormHelperText-root Mui-error"
+                        >
+                          Required *
+                        </p>
                       </div>
                     </div>
                     <div
@@ -147,13 +157,13 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                           <input
                             aria-autocomplete="both"
                             aria-expanded="false"
-                            aria-label="Preferred city"
+                            aria-label="Preferred city *"
                             aria-owns="algolia-places-listbox-0"
                             autocomplete="off"
                             class="ap-input"
                             dir="auto"
                             language="en"
-                            placeholder="Preferred city"
+                            placeholder="Preferred city *"
                             role="combobox"
                             spellcheck="false"
                             style="vertical-align: top;"
@@ -223,7 +233,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
                           data-shrink="true"
                         >
-                          Time
+                          Time *
                         </label>
                         <div
                           class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
@@ -244,7 +254,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                       <legend
                         class="MuiFormLabel-root"
                       >
-                        Priority level (color)
+                        Priority level (color) *
                       </legend>
                       <div
                         class="MuiFormGroup-root"
@@ -255,19 +265,19 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         >
                           <span
                             aria-disabled="false"
-                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-74 Mui-checked MuiIconButton-colorSecondary"
+                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
                           >
                             <span
                               class="MuiIconButton-label"
                             >
                               <input
                                 checked=""
-                                class="PrivateSwitchBase-input-76"
+                                class="PrivateSwitchBase-input-84"
                                 type="radio"
                                 value="red"
                               />
                               <div
-                                class="PrivateRadioButtonIcon-root-89 PrivateRadioButtonIcon-checked-91"
+                                class="PrivateRadioButtonIcon-root-97 PrivateRadioButtonIcon-checked-99"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -282,7 +292,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 </svg>
                                 <svg
                                   aria-hidden="true"
-                                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-90"
+                                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
                                   focusable="false"
                                   role="presentation"
                                   viewBox="0 0 24 24"
@@ -308,18 +318,18 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         >
                           <span
                             aria-disabled="false"
-                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                           >
                             <span
                               class="MuiIconButton-label"
                             >
                               <input
-                                class="PrivateSwitchBase-input-76"
+                                class="PrivateSwitchBase-input-84"
                                 type="radio"
                                 value="yellow"
                               />
                               <div
-                                class="PrivateRadioButtonIcon-root-89"
+                                class="PrivateRadioButtonIcon-root-97"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -334,7 +344,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 </svg>
                                 <svg
                                   aria-hidden="true"
-                                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-90"
+                                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
                                   focusable="false"
                                   role="presentation"
                                   viewBox="0 0 24 24"
@@ -360,18 +370,18 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         >
                           <span
                             aria-disabled="false"
-                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                           >
                             <span
                               class="MuiIconButton-label"
                             >
                               <input
-                                class="PrivateSwitchBase-input-76"
+                                class="PrivateSwitchBase-input-84"
                                 type="radio"
                                 value="green"
                               />
                               <div
-                                class="PrivateRadioButtonIcon-root-89"
+                                class="PrivateRadioButtonIcon-root-97"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -386,7 +396,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 </svg>
                                 <svg
                                   aria-hidden="true"
-                                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-90"
+                                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
                                   focusable="false"
                                   role="presentation"
                                   viewBox="0 0 24 24"
@@ -413,8 +423,9 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                       class="buttons-row"
                     >
                       <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-                        tabindex="0"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled Mui-disabled"
+                        disabled=""
+                        tabindex="-1"
                         type="button"
                       >
                         <span
@@ -422,9 +433,6 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         >
                           Add Reminder
                         </span>
-                        <span
-                          class="MuiTouchRipple-root"
-                        />
                       </button>
                       <button
                         class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
@@ -531,7 +539,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               "readOnly": true,
                             }
                           }
-                          label="Date"
+                          label="Date *"
                           value="1-9-2020"
                         >
                           <ForwardRef(TextField)
@@ -546,7 +554,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 "readOnly": true,
                               }
                             }
-                            label="Date"
+                            label="Date *"
                             value="1-9-2020"
                           >
                             <WithStyles(ForwardRef(FormControl))
@@ -630,7 +638,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                             className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled MuiFormLabel-filled"
                                             data-shrink={true}
                                           >
-                                            Date
+                                            Date *
                                           </label>
                                         </ForwardRef(FormLabel)>
                                       </WithStyles(ForwardRef(FormLabel))>
@@ -791,6 +799,8 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         className="MuiFormControl-root calendar-form-control"
                       >
                         <WithStyles(ForwardRef(TextField))
+                          error={true}
+                          helperText="Required *"
                           label="Username"
                           onChange={[Function]}
                           value=""
@@ -801,6 +811,8 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 "root": "MuiTextField-root",
                               }
                             }
+                            error={true}
+                            helperText="Required *"
                             label="Username"
                             onChange={[Function]}
                             value=""
@@ -809,7 +821,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               className="MuiTextField-root"
                               color="primary"
                               disabled={false}
-                              error={false}
+                              error={true}
                               fullWidth={false}
                               required={false}
                               variant="standard"
@@ -826,7 +838,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 }
                                 color="primary"
                                 disabled={false}
-                                error={false}
+                                error={true}
                                 fullWidth={false}
                                 required={false}
                                 variant="standard"
@@ -883,7 +895,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                           data-shrink={false}
                                         >
                                           <label
-                                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-error Mui-error"
                                             data-shrink={false}
                                           >
                                             Username
@@ -983,11 +995,11 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                           value=""
                                         >
                                           <div
-                                            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                                            className="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
                                             onClick={[Function]}
                                           >
                                             <input
-                                              aria-invalid={false}
+                                              aria-invalid={true}
                                               autoFocus={false}
                                               className="MuiInputBase-input MuiInput-input"
                                               disabled={false}
@@ -1004,6 +1016,28 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                       </WithStyles(ForwardRef(InputBase))>
                                     </ForwardRef(Input)>
                                   </WithStyles(ForwardRef(Input))>
+                                  <WithStyles(ForwardRef(FormHelperText))>
+                                    <ForwardRef(FormHelperText)
+                                      classes={
+                                        Object {
+                                          "contained": "MuiFormHelperText-contained",
+                                          "disabled": "Mui-disabled",
+                                          "error": "Mui-error",
+                                          "filled": "MuiFormHelperText-filled",
+                                          "focused": "Mui-focused",
+                                          "marginDense": "MuiFormHelperText-marginDense",
+                                          "required": "Mui-required",
+                                          "root": "MuiFormHelperText-root",
+                                        }
+                                      }
+                                    >
+                                      <p
+                                        className="MuiFormHelperText-root Mui-error"
+                                      >
+                                        Required *
+                                      </p>
+                                    </ForwardRef(FormHelperText)>
+                                  </WithStyles(ForwardRef(FormHelperText))>
                                 </div>
                               </ForwardRef(FormControl)>
                             </WithStyles(ForwardRef(FormControl))>
@@ -1030,6 +1064,8 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         className="MuiFormControl-root calendar-form-control"
                       >
                         <WithStyles(ForwardRef(TextField))
+                          error={true}
+                          helperText="Required *"
                           inputProps={
                             Object {
                               "maxLength": 30,
@@ -1045,6 +1081,8 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 "root": "MuiTextField-root",
                               }
                             }
+                            error={true}
+                            helperText="Required *"
                             inputProps={
                               Object {
                                 "maxLength": 30,
@@ -1058,7 +1096,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               className="MuiTextField-root"
                               color="primary"
                               disabled={false}
-                              error={false}
+                              error={true}
                               fullWidth={false}
                               required={false}
                               variant="standard"
@@ -1075,7 +1113,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 }
                                 color="primary"
                                 disabled={false}
-                                error={false}
+                                error={true}
                                 fullWidth={false}
                                 required={false}
                                 variant="standard"
@@ -1132,7 +1170,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                           data-shrink={false}
                                         >
                                           <label
-                                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-error Mui-error"
                                             data-shrink={false}
                                           >
                                             Reminder title
@@ -1252,11 +1290,11 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                           value=""
                                         >
                                           <div
-                                            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                                            className="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
                                             onClick={[Function]}
                                           >
                                             <input
-                                              aria-invalid={false}
+                                              aria-invalid={true}
                                               autoFocus={false}
                                               className="MuiInputBase-input MuiInput-input"
                                               disabled={false}
@@ -1274,6 +1312,28 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                       </WithStyles(ForwardRef(InputBase))>
                                     </ForwardRef(Input)>
                                   </WithStyles(ForwardRef(Input))>
+                                  <WithStyles(ForwardRef(FormHelperText))>
+                                    <ForwardRef(FormHelperText)
+                                      classes={
+                                        Object {
+                                          "contained": "MuiFormHelperText-contained",
+                                          "disabled": "Mui-disabled",
+                                          "error": "Mui-error",
+                                          "filled": "MuiFormHelperText-filled",
+                                          "focused": "Mui-focused",
+                                          "marginDense": "MuiFormHelperText-marginDense",
+                                          "required": "Mui-required",
+                                          "root": "MuiFormHelperText-root",
+                                        }
+                                      }
+                                    >
+                                      <p
+                                        className="MuiFormHelperText-root Mui-error"
+                                      >
+                                        Required *
+                                      </p>
+                                    </ForwardRef(FormHelperText)>
+                                  </WithStyles(ForwardRef(FormHelperText))>
                                 </div>
                               </ForwardRef(FormControl)>
                             </WithStyles(ForwardRef(FormControl))>
@@ -1313,21 +1373,21 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                         <AlgoliaPlaces
                           language="en"
                           onChange={[Function]}
-                          onClear={null}
+                          onClear={[Function]}
                           onCursorChanged={null}
                           onError={null}
                           onLimit={null}
                           onSuggestions={null}
                           options={Object {}}
-                          placeholder="Preferred city"
+                          placeholder="Preferred city *"
                           placesRef={null}
                           type="city"
                         >
                           <div>
                             <input
-                              aria-label="Preferred city"
+                              aria-label="Preferred city *"
                               language="en"
-                              placeholder="Preferred city"
+                              placeholder="Preferred city *"
                               type="city"
                             />
                           </div>
@@ -1364,7 +1424,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               "step": 300,
                             }
                           }
-                          label="Time"
+                          label="Time *"
                           onChange={[Function]}
                           type="time"
                         >
@@ -1385,7 +1445,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                 "step": 300,
                               }
                             }
-                            label="Time"
+                            label="Time *"
                             onChange={[Function]}
                             type="time"
                           >
@@ -1473,7 +1533,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                             className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
                                             data-shrink={true}
                                           >
-                                            Time
+                                            Time *
                                           </label>
                                         </ForwardRef(FormLabel)>
                                       </WithStyles(ForwardRef(FormLabel))>
@@ -1660,7 +1720,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                             <legend
                               className="MuiFormLabel-root"
                             >
-                              Priority level (color)
+                              Priority level (color) *
                             </legend>
                           </ForwardRef(FormLabel)>
                         </WithStyles(ForwardRef(FormLabel))>
@@ -1760,10 +1820,10 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-74 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-75 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-76",
-                                                  "root": "PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-82 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-83 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-84",
+                                                  "root": "PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary",
                                                 }
                                               }
                                               color="secondary"
@@ -1778,7 +1838,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                               value="red"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-74 Mui-checked"
+                                                className="PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked"
                                                 color="secondary"
                                                 component="span"
                                                 disabled={false}
@@ -1787,7 +1847,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-74 Mui-checked"
+                                                  className="PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -1810,7 +1870,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-74 Mui-checked MuiIconButton-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -1820,7 +1880,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-74 Mui-checked MuiIconButton-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -1837,7 +1897,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-74 Mui-checked MuiIconButton-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-82 Mui-checked MuiIconButton-colorSecondary"
                                                         onBlur={[Function]}
                                                         onDragLeave={[Function]}
                                                         onFocus={[Function]}
@@ -1856,7 +1916,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                         >
                                                           <input
                                                             checked={true}
-                                                            className="PrivateSwitchBase-input-76"
+                                                            className="PrivateSwitchBase-input-84"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="radio"
@@ -1870,15 +1930,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                               checked={true}
                                                               classes={
                                                                 Object {
-                                                                  "checked": "PrivateRadioButtonIcon-checked-91",
-                                                                  "layer": "PrivateRadioButtonIcon-layer-90",
-                                                                  "root": "PrivateRadioButtonIcon-root-89",
+                                                                  "checked": "PrivateRadioButtonIcon-checked-99",
+                                                                  "layer": "PrivateRadioButtonIcon-layer-98",
+                                                                  "root": "PrivateRadioButtonIcon-root-97",
                                                                 }
                                                               }
                                                               fontSize="default"
                                                             >
                                                               <div
-                                                                className="PrivateRadioButtonIcon-root-89 PrivateRadioButtonIcon-checked-91"
+                                                                className="PrivateRadioButtonIcon-root-97 PrivateRadioButtonIcon-checked-99"
                                                               >
                                                                 <ForwardRef
                                                                   fontSize="default"
@@ -1917,15 +1977,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                                   </WithStyles(ForwardRef(SvgIcon))>
                                                                 </ForwardRef>
                                                                 <ForwardRef
-                                                                  className="PrivateRadioButtonIcon-layer-90"
+                                                                  className="PrivateRadioButtonIcon-layer-98"
                                                                   fontSize="default"
                                                                 >
                                                                   <WithStyles(ForwardRef(SvgIcon))
-                                                                    className="PrivateRadioButtonIcon-layer-90"
+                                                                    className="PrivateRadioButtonIcon-layer-98"
                                                                     fontSize="default"
                                                                   >
                                                                     <ForwardRef(SvgIcon)
-                                                                      className="PrivateRadioButtonIcon-layer-90"
+                                                                      className="PrivateRadioButtonIcon-layer-98"
                                                                       classes={
                                                                         Object {
                                                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -1943,7 +2003,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                                     >
                                                                       <svg
                                                                         aria-hidden="true"
-                                                                        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-90"
+                                                                        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
                                                                         focusable="false"
                                                                         role="presentation"
                                                                         viewBox="0 0 24 24"
@@ -2126,10 +2186,10 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-74 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-75 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-76",
-                                                  "root": "PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-82 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-83 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-84",
+                                                  "root": "PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary",
                                                 }
                                               }
                                               color="secondary"
@@ -2144,7 +2204,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                               value="yellow"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary"
+                                                className="PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary"
                                                 color="secondary"
                                                 component="span"
                                                 disabled={false}
@@ -2153,7 +2213,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary"
+                                                  className="PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -2176,7 +2236,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -2186,7 +2246,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -2203,7 +2263,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                                                         onBlur={[Function]}
                                                         onDragLeave={[Function]}
                                                         onFocus={[Function]}
@@ -2222,7 +2282,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                         >
                                                           <input
                                                             checked={false}
-                                                            className="PrivateSwitchBase-input-76"
+                                                            className="PrivateSwitchBase-input-84"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="radio"
@@ -2234,15 +2294,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                             <RadioButtonIcon
                                                               classes={
                                                                 Object {
-                                                                  "checked": "PrivateRadioButtonIcon-checked-91",
-                                                                  "layer": "PrivateRadioButtonIcon-layer-90",
-                                                                  "root": "PrivateRadioButtonIcon-root-89",
+                                                                  "checked": "PrivateRadioButtonIcon-checked-99",
+                                                                  "layer": "PrivateRadioButtonIcon-layer-98",
+                                                                  "root": "PrivateRadioButtonIcon-root-97",
                                                                 }
                                                               }
                                                               fontSize="default"
                                                             >
                                                               <div
-                                                                className="PrivateRadioButtonIcon-root-89"
+                                                                className="PrivateRadioButtonIcon-root-97"
                                                               >
                                                                 <ForwardRef
                                                                   fontSize="default"
@@ -2281,15 +2341,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                                   </WithStyles(ForwardRef(SvgIcon))>
                                                                 </ForwardRef>
                                                                 <ForwardRef
-                                                                  className="PrivateRadioButtonIcon-layer-90"
+                                                                  className="PrivateRadioButtonIcon-layer-98"
                                                                   fontSize="default"
                                                                 >
                                                                   <WithStyles(ForwardRef(SvgIcon))
-                                                                    className="PrivateRadioButtonIcon-layer-90"
+                                                                    className="PrivateRadioButtonIcon-layer-98"
                                                                     fontSize="default"
                                                                   >
                                                                     <ForwardRef(SvgIcon)
-                                                                      className="PrivateRadioButtonIcon-layer-90"
+                                                                      className="PrivateRadioButtonIcon-layer-98"
                                                                       classes={
                                                                         Object {
                                                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -2307,7 +2367,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                                     >
                                                                       <svg
                                                                         aria-hidden="true"
-                                                                        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-90"
+                                                                        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
                                                                         focusable="false"
                                                                         role="presentation"
                                                                         viewBox="0 0 24 24"
@@ -2490,10 +2550,10 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                               }
                                               classes={
                                                 Object {
-                                                  "checked": "PrivateSwitchBase-checked-74 Mui-checked",
-                                                  "disabled": "PrivateSwitchBase-disabled-75 Mui-disabled",
-                                                  "input": "PrivateSwitchBase-input-76",
-                                                  "root": "PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary",
+                                                  "checked": "PrivateSwitchBase-checked-82 Mui-checked",
+                                                  "disabled": "PrivateSwitchBase-disabled-83 Mui-disabled",
+                                                  "input": "PrivateSwitchBase-input-84",
+                                                  "root": "PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary",
                                                 }
                                               }
                                               color="secondary"
@@ -2508,7 +2568,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                               value="green"
                                             >
                                               <WithStyles(ForwardRef(IconButton))
-                                                className="PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary"
+                                                className="PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary"
                                                 color="secondary"
                                                 component="span"
                                                 disabled={false}
@@ -2517,7 +2577,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <ForwardRef(IconButton)
-                                                  className="PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary"
+                                                  className="PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary"
                                                   classes={
                                                     Object {
                                                       "colorInherit": "MuiIconButton-colorInherit",
@@ -2540,7 +2600,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                 >
                                                   <WithStyles(ForwardRef(ButtonBase))
                                                     centerRipple={true}
-                                                    className="MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                                                    className="MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                                                     component="span"
                                                     disabled={false}
                                                     focusRipple={true}
@@ -2550,7 +2610,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                   >
                                                     <ForwardRef(ButtonBase)
                                                       centerRipple={true}
-                                                      className="MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                                                      className="MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                                                       classes={
                                                         Object {
                                                           "disabled": "Mui-disabled",
@@ -2567,7 +2627,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                     >
                                                       <span
                                                         aria-disabled={false}
-                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-73 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+                                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
                                                         onBlur={[Function]}
                                                         onDragLeave={[Function]}
                                                         onFocus={[Function]}
@@ -2586,7 +2646,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                         >
                                                           <input
                                                             checked={false}
-                                                            className="PrivateSwitchBase-input-76"
+                                                            className="PrivateSwitchBase-input-84"
                                                             disabled={false}
                                                             onChange={[Function]}
                                                             type="radio"
@@ -2598,15 +2658,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                             <RadioButtonIcon
                                                               classes={
                                                                 Object {
-                                                                  "checked": "PrivateRadioButtonIcon-checked-91",
-                                                                  "layer": "PrivateRadioButtonIcon-layer-90",
-                                                                  "root": "PrivateRadioButtonIcon-root-89",
+                                                                  "checked": "PrivateRadioButtonIcon-checked-99",
+                                                                  "layer": "PrivateRadioButtonIcon-layer-98",
+                                                                  "root": "PrivateRadioButtonIcon-root-97",
                                                                 }
                                                               }
                                                               fontSize="default"
                                                             >
                                                               <div
-                                                                className="PrivateRadioButtonIcon-root-89"
+                                                                className="PrivateRadioButtonIcon-root-97"
                                                               >
                                                                 <ForwardRef
                                                                   fontSize="default"
@@ -2645,15 +2705,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                                   </WithStyles(ForwardRef(SvgIcon))>
                                                                 </ForwardRef>
                                                                 <ForwardRef
-                                                                  className="PrivateRadioButtonIcon-layer-90"
+                                                                  className="PrivateRadioButtonIcon-layer-98"
                                                                   fontSize="default"
                                                                 >
                                                                   <WithStyles(ForwardRef(SvgIcon))
-                                                                    className="PrivateRadioButtonIcon-layer-90"
+                                                                    className="PrivateRadioButtonIcon-layer-98"
                                                                     fontSize="default"
                                                                   >
                                                                     <ForwardRef(SvgIcon)
-                                                                      className="PrivateRadioButtonIcon-layer-90"
+                                                                      className="PrivateRadioButtonIcon-layer-98"
                                                                       classes={
                                                                         Object {
                                                                           "colorAction": "MuiSvgIcon-colorAction",
@@ -2671,7 +2731,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                                                                     >
                                                                       <svg
                                                                         aria-hidden="true"
-                                                                        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-90"
+                                                                        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-98"
                                                                         focusable="false"
                                                                         role="presentation"
                                                                         viewBox="0 0 24 24"
@@ -2790,6 +2850,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                   >
                     <WithStyles(ForwardRef(Button))
                       color="primary"
+                      disabled={true}
                       onClick={[Function]}
                       variant="contained"
                     >
@@ -2828,20 +2889,21 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                           }
                         }
                         color="primary"
+                        disabled={true}
                         onClick={[Function]}
                         variant="contained"
                       >
                         <WithStyles(ForwardRef(ButtonBase))
-                          className="MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+                          className="MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled"
                           component="button"
-                          disabled={false}
+                          disabled={true}
                           focusRipple={true}
                           focusVisibleClassName="Mui-focusVisible"
                           onClick={[Function]}
                           type="button"
                         >
                           <ForwardRef(ButtonBase)
-                            className="MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+                            className="MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled"
                             classes={
                               Object {
                                 "disabled": "Mui-disabled",
@@ -2850,15 +2912,15 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               }
                             }
                             component="button"
-                            disabled={false}
+                            disabled={true}
                             focusRipple={true}
                             focusVisibleClassName="Mui-focusVisible"
                             onClick={[Function]}
                             type="button"
                           >
                             <button
-                              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-                              disabled={false}
+                              className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled Mui-disabled"
+                              disabled={true}
                               onBlur={[Function]}
                               onClick={[Function]}
                               onDragLeave={[Function]}
@@ -2871,7 +2933,7 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               onTouchEnd={[Function]}
                               onTouchMove={[Function]}
                               onTouchStart={[Function]}
-                              tabIndex={0}
+                              tabIndex={-1}
                               type="button"
                             >
                               <span
@@ -2879,36 +2941,6 @@ exports[`CalendarForm [Component] should be rendered 1`] = `
                               >
                                 Add Reminder
                               </span>
-                              <NoSsr>
-                                <WithStyles(undefined)
-                                  center={false}
-                                >
-                                  <ForwardRef(TouchRipple)
-                                    center={false}
-                                    classes={
-                                      Object {
-                                        "child": "MuiTouchRipple-child",
-                                        "childLeaving": "MuiTouchRipple-childLeaving",
-                                        "childPulsate": "MuiTouchRipple-childPulsate",
-                                        "ripple": "MuiTouchRipple-ripple",
-                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
-                                        "root": "MuiTouchRipple-root",
-                                      }
-                                    }
-                                  >
-                                    <span
-                                      className="MuiTouchRipple-root"
-                                    >
-                                      <TransitionGroup
-                                        childFactory={[Function]}
-                                        component={null}
-                                        exit={true}
-                                      />
-                                    </span>
-                                  </ForwardRef(TouchRipple)>
-                                </WithStyles(undefined)>
-                              </NoSsr>
                             </button>
                           </ForwardRef(ButtonBase)>
                         </WithStyles(ForwardRef(ButtonBase))>

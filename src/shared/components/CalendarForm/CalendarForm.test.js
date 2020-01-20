@@ -1,5 +1,7 @@
 import React from 'react';
-import { mount, configure } from 'enzyme';
+import renderer from 'react-test-renderer';
+import ReactDOM from 'react-dom';
+import { mount, configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import * as actions from '../../store/actions/reminderActions';
 import { Provider } from 'react-redux';
@@ -12,8 +14,11 @@ import {
   TextField,
   RadioGroup,
   FormControlLabel,
-  Button
+  Button,
+  Container
 } from '@material-ui/core';
+import { act } from 'react-dom/test-utils';
+import { cleanup } from '@testing-library/react';
 
 configure({ adapter: new Adapter() });
 
@@ -31,7 +36,12 @@ const store = mockStore({
   }
 });
 
-const selectedReminder = { title: 'test reminder 1', id: '1-9-2020_0' };
+const selectedReminder = {
+  title: 'test reminder 1',
+  id: '1-9-2020_0',
+  username: 'test username',
+  city: 'Barcelona'
+};
 
 let component;
 
@@ -55,6 +65,8 @@ describe('CalendarForm [Component]', () => {
       </Provider>
     );
   });
+
+  afterEach(cleanup);
 
   it('should be rendered', () => {
     expect(EnzymeToJson(component)).toMatchSnapshot();
@@ -111,10 +123,37 @@ describe('CalendarForm [Component]', () => {
   it('should dispatch add reminder action when creating new reminder', () => {
     sinon.spy(actions, 'addReminder');
 
+    let usernameField = component.find(TextField).at(1);
+    let reminderTitle = component.find(TextField).at(2);
+
+    act(() => {
+      usernameField.props().onChange({ target: { value: 'username test ' } });
+    });
+    component.update();
+
+    usernameField = component.find(TextField).at(1);
+    reminderTitle = component.find(TextField).at(2);
+
+    act(() => {
+      reminderTitle.props().onChange({ target: { value: 'title test' } });
+    });
+    component.update();
+
+    let cityField = component.find(AlgoliaPlaces).first();
+
+    act(() => {
+      cityField
+        .props()
+        .onChange({ suggestion: { name: 'Barcelona, Catalunya, Spain' } });
+    });
+
+    component.update();
+
     component
       .find(Button)
       .first()
       .simulate('click');
+
     expect(actions.addReminder.calledOnce).toBeTruthy();
   });
 
