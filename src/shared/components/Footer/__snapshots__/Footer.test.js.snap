@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should be rendered 1`] = `
+<div
+  className="footer-container"
+>
+  <span>
+    Author: 
+  </span>
+  <a
+    href="https://github.com/MarioGranada/jobsityCalendar"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Mario Granada
+  </a>
+</div>
+`;
