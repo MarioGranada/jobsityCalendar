@@ -1,0 +1,2054 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > should be rendered 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header-container"
+    >
+      <a
+        class="header-brand"
+        href="/"
+      >
+        <img
+          alt="Jobsity-calendar-header-logo"
+          src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2016.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='156px'%20height='40px'%20viewBox='-17.352%20-4.355%20156%2040'%20enable-background='new%20-17.352%20-4.355%20156%2040'%20xml:space='preserve'%20%3e%3cg%3e%3cpath%20fill='%23211D1E'%20d='M42.392,7.193h4.791c0,0,0,9.567,0,10.781c0,2.395-2.161,5.739-6.388,5.739%20c-4.226,0-6.948-2.332-6.948-6.72h4.789c0,0-0.281,2.707,1.878,2.707C43.143,19.701,42.392,18.1,42.392,7.193z'/%3e%3cpath%20fill='%23211D1E'%20d='M58.086,7.073c-4.616,0-8.36,3.719-8.36,8.309c0,4.587,3.744,8.309,8.36,8.309%20c4.614,0,8.358-3.722,8.358-8.309C66.443,10.792,62.7,7.073,58.086,7.073z%20M58.086,19.333c-2.153,0-3.897-1.733-3.897-3.874%20c0-2.14,1.744-3.875,3.897-3.875c2.151,0,3.897,1.735,3.897,3.875C61.983,17.6,60.237,19.333,58.086,19.333z'/%3e%3cpath%20fill='%23211D1E'%20d='M80.519,15.36V14.8c0,0,1.925,0.421,1.925-3.222c0-3.642-3.896-4.387-5.868-4.387s-7.419,0-7.419,0%20l0.092,16.195c0,0,6.621,0,9.91,0c3.285,0,4.554-2.613,4.554-4.436C83.712,17.13,82.208,15.36,80.519,15.36z%20M73.725,10.914%20c0,0,1.579,0.013,2.521,0.013c0.938,0,1.479,0.584,1.479,1.377c0,0.793-0.869,1.261-1.55,1.261c-0.682,0-2.45-0.024-2.45-0.024%20L73.725,10.914L73.725,10.914z%20M77.358,19.921c-1.144,0-3.633,0-3.633,0l-0.016-2.679c0,0,2.63,0,3.443,0s1.661,0.669,1.661,1.402%20C78.812,19.375,78.498,19.921,77.358,19.921z'/%3e%3cpath%20fill='%23211D1E'%20d='M85.619,12.358c0-2.178,1.473-5.242,6.105-5.242c4.634,0,6.417,1.44,6.417,1.44l-1.376,3.832%20c-2.38-1.026-3.381-1.118-4.603-1.118c-1.221,0-1.688,0.373-1.688,0.777c0,1.19,1.345,0.686,4.443,1.9%20c3.1,1.212,3.569,3.11,3.569,4.417c0,1.308-1.126,5.42-6.917,5.42c-4.078,0-6.105-1.344-6.105-1.344l1.189-4.293%20c2.193,1.429,2.944,1.648,4.413,1.648c1.474,0,2.567-0.372,2.567-1.09c0-0.716-1.408-0.775-3.507-1.492%20C88.032,16.496,85.903,15.906,85.619,12.358z'/%3e%3crect%20x='100.896'%20y='7.333'%20fill='%23211D1E'%20width='4.838'%20height='16.196'/%3e%3cpolygon%20fill='%23211D1E'%20points='121.832,7.193%20107.98,7.193%20107.98,11.626%20112.494,11.626%20112.494,23.528%20117.333,23.528%20117.333,11.626%20121.832,11.626%20'/%3e%3cpolygon%20fill='%23211D1E'%20points='138.648,8.219%20138.6,7.239%20133.669,7.239%20130.524,12.979%20130.538,13.207%20130.459,13.207%20130.47,12.979%20127.327,7.239%20122.396,7.239%20122.349,8.219%20128.124,17.228%20128.13,17.229%20128.13,23.528%20132.966,23.528%20132.966,17.082%20'/%3e%3c/g%3e%3cg%3e%3cellipse%20fill='%23211D1E'%20cx='2.768'%20cy='15.645'%20rx='20.12'%20ry='20'/%3e%3cpath%20fill='%23FFF9EE'%20d='M11.188,3.006c0,0,0,14.583,0,18.26c0,3.679-2.875,8.75-9.034,8.75c-5.285,0-9.203-4.94-9.203-9.143h9.251%20V2.999L11.188,3.006z'/%3e%3cpath%20fill='%236EC1E6'%20d='M2.203,20.873h-9.251c0,4.202,3.918,9.142,9.203,9.142L2.203,20.873z'/%3e%3c/g%3e%3c/svg%3e"
+        />
+      </a>
+    </div>
+    <div
+      class="home-container"
+    >
+      <div
+        class="jobsity-calendar-container"
+      >
+        <div
+          class="DayPicker DayPicker--interactionDisabled"
+          lang="en"
+        >
+          <div
+            class="DayPicker-wrapper"
+            tabindex="0"
+          >
+            <div
+              class="DayPicker-NavBar"
+            >
+              <span
+                aria-label="Previous Month"
+                class="DayPicker-NavButton DayPicker-NavButton--prev DayPicker-NavButton--interactionDisabled"
+                role="button"
+                tabindex="0"
+              />
+              <span
+                aria-label="Next Month"
+                class="DayPicker-NavButton DayPicker-NavButton--next"
+                role="button"
+                tabindex="0"
+              />
+            </div>
+            <div
+              class="DayPicker-Months"
+            >
+              <div
+                class="DayPicker-Month"
+                role="grid"
+              >
+                <div
+                  aria-live="polite"
+                  class="DayPicker-Caption"
+                  role="heading"
+                >
+                  <div>
+                    January 2020
+                  </div>
+                </div>
+                <div
+                  class="DayPicker-Weekdays"
+                  role="rowgroup"
+                >
+                  <div
+                    class="DayPicker-WeekdaysRow"
+                    role="row"
+                  >
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Sunday"
+                      >
+                        Su
+                      </abbr>
+                    </div>
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Monday"
+                      >
+                        Mo
+                      </abbr>
+                    </div>
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Tuesday"
+                      >
+                        Tu
+                      </abbr>
+                    </div>
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Wednesday"
+                      >
+                        We
+                      </abbr>
+                    </div>
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Thursday"
+                      >
+                        Th
+                      </abbr>
+                    </div>
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Friday"
+                      >
+                        Fr
+                      </abbr>
+                    </div>
+                    <div
+                      class="DayPicker-Weekday"
+                      role="columnheader"
+                    >
+                      <abbr
+                        title="Saturday"
+                      >
+                        Sa
+                      </abbr>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="DayPicker-Body"
+                  role="rowgroup"
+                >
+                  <div
+                    class="DayPicker-Week"
+                    role="row"
+                  >
+                    <div
+                      aria-disabled="true"
+                      aria-label="Sun Dec 29 2019"
+                      aria-selected="false"
+                      class="DayPicker-Day DayPicker-Day--outside"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_12-29-2019"
+                      >
+                        <span>
+                          29
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="12-29-2019"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="true"
+                      aria-label="Mon Dec 30 2019"
+                      aria-selected="false"
+                      class="DayPicker-Day DayPicker-Day--outside"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_12-30-2019"
+                      >
+                        <span>
+                          30
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="12-30-2019"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="true"
+                      aria-label="Tue Dec 31 2019"
+                      aria-selected="false"
+                      class="DayPicker-Day DayPicker-Day--outside"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_12-31-2019"
+                      >
+                        <span>
+                          31
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="12-31-2019"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Wed Jan 01 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="0"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-1-2020"
+                      >
+                        <span>
+                          1
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-1-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Thu Jan 02 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-2-2020"
+                      >
+                        <span>
+                          2
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-2-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Fri Jan 03 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-3-2020"
+                      >
+                        <span>
+                          3
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-3-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sat Jan 04 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-4-2020"
+                      >
+                        <span>
+                          4
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-4-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="DayPicker-Week"
+                    role="row"
+                  >
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sun Jan 05 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-5-2020"
+                      >
+                        <span>
+                          5
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-5-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Mon Jan 06 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-6-2020"
+                      >
+                        <span>
+                          6
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-6-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Tue Jan 07 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-7-2020"
+                      >
+                        <span>
+                          7
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-7-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Wed Jan 08 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-8-2020"
+                      >
+                        <span>
+                          8
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-8-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Thu Jan 09 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-9-2020"
+                      >
+                        <span>
+                          9
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-9-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Fri Jan 10 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-10-2020"
+                      >
+                        <span>
+                          10
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-10-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sat Jan 11 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-11-2020"
+                      >
+                        <span>
+                          11
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-11-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="DayPicker-Week"
+                    role="row"
+                  >
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sun Jan 12 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-12-2020"
+                      >
+                        <span>
+                          12
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-12-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Mon Jan 13 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-13-2020"
+                      >
+                        <span>
+                          13
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-13-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Tue Jan 14 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-14-2020"
+                      >
+                        <span>
+                          14
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-14-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Wed Jan 15 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-15-2020"
+                      >
+                        <span>
+                          15
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-15-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Thu Jan 16 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-16-2020"
+                      >
+                        <span>
+                          16
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-16-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Fri Jan 17 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-17-2020"
+                      >
+                        <span>
+                          17
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-17-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sat Jan 18 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-18-2020"
+                      >
+                        <span>
+                          18
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-18-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="DayPicker-Week"
+                    role="row"
+                  >
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sun Jan 19 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-19-2020"
+                      >
+                        <span>
+                          19
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-19-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Mon Jan 20 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day DayPicker-Day--today"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-20-2020"
+                      >
+                        <span>
+                          20
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-20-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Tue Jan 21 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-21-2020"
+                      >
+                        <span>
+                          21
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-21-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Wed Jan 22 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-22-2020"
+                      >
+                        <span>
+                          22
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-22-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Thu Jan 23 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-23-2020"
+                      >
+                        <span>
+                          23
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-23-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Fri Jan 24 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-24-2020"
+                      >
+                        <span>
+                          24
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-24-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sat Jan 25 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-25-2020"
+                      >
+                        <span>
+                          25
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-25-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="DayPicker-Week"
+                    role="row"
+                  >
+                    <div
+                      aria-disabled="false"
+                      aria-label="Sun Jan 26 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-26-2020"
+                      >
+                        <span>
+                          26
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-26-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Mon Jan 27 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-27-2020"
+                      >
+                        <span>
+                          27
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-27-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Tue Jan 28 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-28-2020"
+                      >
+                        <span>
+                          28
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-28-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Wed Jan 29 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-29-2020"
+                      >
+                        <span>
+                          29
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-29-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Thu Jan 30 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-30-2020"
+                      >
+                        <span>
+                          30
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-30-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="false"
+                      aria-label="Fri Jan 31 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_1-31-2020"
+                      >
+                        <span>
+                          31
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="1-31-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      aria-disabled="true"
+                      aria-label="Sat Feb 01 2020"
+                      aria-selected="false"
+                      class="DayPicker-Day DayPicker-Day--outside"
+                      role="gridcell"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="day-box"
+                        id="day-box_2-1-2020"
+                      >
+                        <span>
+                          1
+                        </span>
+                        <br />
+                        <div
+                          class="date-buttons-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root calendar-icon"
+                            focusable="false"
+                            label="2-1-2020"
+                            variant="primary"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                            />
+                          </svg>
+                          <span
+                            class="clear-date-label"
+                          >
+                            Clear 
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root calendar-icon clear-icon"
+                              focusable="false"
+                              variant="primary"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M13.89 8.7L12 10.59 10.11 8.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 8.7 13.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l1.89 1.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l1.89-1.89c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.38-1.41 0zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <div
+                          class="date-reminders-container"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="footer-container"
+    >
+      <span>
+        Author: 
+      </span>
+      <a
+        href="https://github.com/MarioGranada/jobsityCalendar"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Mario Granada
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

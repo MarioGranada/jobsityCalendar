@@ -15,12 +15,12 @@ This document defines the non-negotiable foundations for this repository. Read i
 
 | Layer | Choice | Rationale |
 | --- | --- | --- |
-| Framework | React 16 (Create React App 3) | The challenge was scoped to a CRA application. |
+| Framework | React 16 + Vite 8 | Vite replaced the unmaintained Create React App. |
 | State | Redux + React Redux | Reminders and modal state are shared between the calendar and the form. |
 | UI | Material UI 4 + SCSS | Form controls and layout were built with the challenge-era component library. |
 | Calendar | react-day-picker 7 | Provides the month grid and day selection. |
-| Services | Axios + Algolia Places + OpenWeather | City lookup and weather are external service calls. |
-| Testing | Jest + Enzyme + snapshots | The challenge required component tests. |
+| Services | Axios + Photon (OpenStreetMap) + OpenWeather | City lookup (keyless) and weather are external service calls. |
+| Testing | Vitest + React Testing Library + snapshots | The challenge required component tests. |
 
 **Rule of thumb:** a new dependency must solve a concrete problem that the current stack cannot solve cleanly. Justify it in the change that introduces it.
 
@@ -40,7 +40,7 @@ A challenge submission that demonstrates a calendar, reminder CRUD, Redux state,
 
 - Reminder state belongs in Redux; the calendar and form read from the same store.
 - External service calls stay in `shared/services/`.
-- Keep the `develop` branch as the integration branch and `master` as the release point, matching the original workflow.
+- `master` is the integration and release branch; work in feature branches merged by PR.
 
 ### 4. Data and State
 
@@ -56,21 +56,21 @@ A challenge submission that demonstrates a calendar, reminder CRUD, Redux state,
 
 ### 6. Quality Gates
 
-- `yarn test` and `yarn build` are the gates on `develop`.
+- `yarn lint`, `yarn test` and `yarn build` are the gates.
 - Manually test create, edit, delete, colour selection, city autocomplete, and weather failure.
 - Keep snapshots updated when markup changes intentionally.
 
 ### 7. Deployment
 
-- Publish the `develop` build to GitHub Pages through Actions.
-- Move the weather key to a repository secret/environment variable first.
+- Publish the `master` build (`dist/`) to GitHub Pages through Actions.
+- The weather key comes from the `VITE_OPENWEATHER_API_KEY` repository secret.
 - No server or database deployment is needed.
 
 ## What to Avoid
 
 - Running the app from `master` and assuming features are missing.
 - Committing API keys or adding more hardcoded credentials.
-- Upgrading CRA piecemeal without checking node-sass compatibility.
+- Upgrading React/MUI majors without a migration plan.
 - Storing reminders outside Redux and duplicating state.
 
 ## Checklist Before Adding Anything New
