@@ -1,0 +1,470 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CalendarForm [Component] > should be rendered 1`] = `
+<div
+  class="calendar-form-container"
+  tabindex="-1"
+>
+  <form
+    autocomplete="off"
+    novalidate=""
+  >
+    <div
+      class="MuiFormControl-root calendar-form-control"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled MuiFormLabel-filled"
+          data-shrink="true"
+          for="reminder-date"
+          id="reminder-date-label"
+        >
+          Date *
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled"
+            disabled=""
+            id="reminder-date"
+            readonly=""
+            type="text"
+            value="1-9-2020"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiFormControl-root calendar-form-control"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-error Mui-error"
+          data-shrink="false"
+          for="reminder-username"
+          id="reminder-username-label"
+        >
+          Username
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-describedby="reminder-username-helper-text"
+            aria-invalid="true"
+            class="MuiInputBase-input MuiInput-input"
+            id="reminder-username"
+            type="text"
+            value=""
+          />
+        </div>
+        <p
+          class="MuiFormHelperText-root Mui-error"
+          id="reminder-username-helper-text"
+        >
+          Required *
+        </p>
+      </div>
+    </div>
+    <div
+      class="MuiFormControl-root calendar-form-control"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-error Mui-error"
+          data-shrink="false"
+          for="reminder-title"
+          id="reminder-title-label"
+        >
+          Reminder title
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-describedby="reminder-title-helper-text"
+            aria-invalid="true"
+            class="MuiInputBase-input MuiInput-input"
+            id="reminder-title"
+            maxlength="30"
+            type="text"
+            value=""
+          />
+        </div>
+        <p
+          class="MuiFormHelperText-root Mui-error"
+          id="reminder-title-helper-text"
+        >
+          Required *
+        </p>
+      </div>
+    </div>
+    <div
+      class="MuiFormControl-root calendar-form-control"
+    >
+      <div
+        class="current-city"
+      >
+        <div>
+          City: 
+          
+        </div>
+        <div>
+          City Forecast:
+           
+        </div>
+      </div>
+      <div
+        class="city-autocomplete"
+      >
+        <div
+          aria-expanded="false"
+          class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+          role="combobox"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+              data-shrink="false"
+              for="reminder-city"
+              id="reminder-city-label"
+            >
+              Preferred city *
+            </label>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-invalid="false"
+                autocapitalize="none"
+                autocomplete="off"
+                class="MuiInputBase-input MuiInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd"
+                id="reminder-city"
+                spellcheck="false"
+                type="text"
+                value=""
+              />
+              <div
+                class="MuiAutocomplete-endAdornment"
+              >
+                <button
+                  aria-label="Clear"
+                  class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
+                  tabindex="-1"
+                  title="Clear"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  aria-label="Open"
+                  class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
+                  tabindex="-1"
+                  title="Open"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small
+          class="city-autocomplete-attribution"
+        >
+          Search by
+           
+          <a
+            href="https://photon.komoot.io"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Photon
+          </a>
+           
+          · ©
+           
+          <a
+            href="https://www.openstreetmap.org/copyright"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            OpenStreetMap
+          </a>
+           
+          contributors
+        </small>
+      </div>
+    </div>
+    <div
+      class="MuiFormControl-root calendar-form-control"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+          for="reminder-time"
+          id="reminder-time-label"
+        >
+          Time *
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            id="reminder-time"
+            step="300"
+            type="time"
+            value="07:30"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiFormControl-root calendar-form-control"
+    >
+      <legend
+        class="MuiFormLabel-root"
+      >
+        Priority level (color) *
+      </legend>
+      <div
+        class="MuiFormGroup-root"
+        role="radiogroup"
+      >
+        <label
+          class="MuiFormControlLabel-root"
+        >
+          <span
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiRadio-root MuiRadio-colorSecondary PrivateSwitchBase-checked-2 Mui-checked MuiIconButton-colorSecondary"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <input
+                checked=""
+                class="PrivateSwitchBase-input-4"
+                name="reminder-color"
+                type="radio"
+                value="red"
+              />
+              <div
+                class="PrivateRadioButtonIcon-root-5 PrivateRadioButtonIcon-checked-7"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </span>
+          <span
+            class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+          >
+            High Priority
+          </span>
+        </label>
+        <label
+          class="MuiFormControlLabel-root"
+        >
+          <span
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <input
+                class="PrivateSwitchBase-input-4"
+                name="reminder-color"
+                type="radio"
+                value="yellow"
+              />
+              <div
+                class="PrivateRadioButtonIcon-root-5"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </span>
+          <span
+            class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+          >
+            Priority
+          </span>
+        </label>
+        <label
+          class="MuiFormControlLabel-root"
+        >
+          <span
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <input
+                class="PrivateSwitchBase-input-4"
+                name="reminder-color"
+                type="radio"
+                value="green"
+              />
+              <div
+                class="PrivateRadioButtonIcon-root-5"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                  />
+                </svg>
+              </div>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </span>
+          <span
+            class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+          >
+            Low Priority
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="buttons-row"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled Mui-disabled"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Add Reminder
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Cancel
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </form>
+</div>
+`;

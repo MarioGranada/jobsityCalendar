@@ -19,6 +19,8 @@ const Calendar = () => {
   const [isUpdatingReminder, setIsUpdatingReminder] = useState(false);
 
   const [selectedReminder, setSelectedReminder] = useState(null);
+  // bumped on every open so CalendarForm remounts with fresh state
+  const [formKey, setFormKey] = useState(0);
 
   const reminders = useSelector(state => state.reminders.items);
 
@@ -61,6 +63,7 @@ const Calendar = () => {
                   setSelectedReminder(item);
                   setSelectedDate(formattedDay);
                   setIsUpdatingReminder(true);
+                  setFormKey(key => key + 1);
                   dispatch(openModal());
                 }}
                 key={item.id}
@@ -77,6 +80,7 @@ const Calendar = () => {
     setSelectedDate(day.toLocaleDateString().replace(/\//g, '-'));
     setSelectedReminder(null);
     setIsUpdatingReminder(false);
+    setFormKey(key => key + 1);
     dispatch(openModal());
   };
 
@@ -88,6 +92,7 @@ const Calendar = () => {
         fromMonth={new Date()}
       />
       <CalendarForm
+        key={formKey}
         isUpdatingReminder={isUpdatingReminder}
         selectedDate={selectedDate}
         selectedReminder={selectedReminder || null}

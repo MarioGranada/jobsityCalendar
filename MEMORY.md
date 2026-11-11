@@ -1,35 +1,31 @@
 # Jobsity Calendar — Working Memory
 
-_Last updated: 2026-11-02_
+_Last updated: 2026-11-12_
 
 ## Current status
 
-- `master` contains the CRA scaffold; `develop` contains the calendar implementation.
-- Reminder CRUD, city autocomplete, weather lookup, Redux store, and tests exist on `develop`.
-- No deployment workflow yet.
+- `develop` merged into the Vite-migrated `master` (2026-11); 47 Vitest tests; GitHub Pages workflow.
+- Algolia Places (shut down 2022) replaced by Photon (OpenStreetMap, free, no key).
 
 ## Key decisions
 
-- Followed the original branch workflow: implementation on `develop`, release on `master`.
+- Chose Photon over Geoapify/OpenCage because it needs no API key.
 - Used Redux because the calendar and modal need shared reminder state.
 
 ## Known limitations and follow-ups
 
-- OpenWeather key is hardcoded on `develop`.
-- Old CRA/node-sass toolchain limits Node versions.
+- The old OpenWeather key remains in git history; it must be revoked (now read from `VITE_OPENWEATHER_API_KEY`).
 - Reminders do not persist across reloads.
 
 ## Mistakes to avoid
 
-- Do not judge the project from `master`; it is intentionally a scaffold.
-- Do not upgrade Node without checking node-sass 4.
-- Do not publish the repository with the weather key in source.
+- Do not hardcode API keys; use `.env` / Actions secrets.
+- Do not remove the frozen date in tests (snapshots depend on January 2020).
 
 ## Next steps
 
-- Move the weather key to `REACT_APP_OPENWEATHER_KEY`.
-- Add a GitHub Actions Pages workflow.
-- Consider migrating from node-sass to Dart Sass and CRA to Vite.
+- Persist reminders (localStorage).
+- Add the OpenWeather key secret and revoke the old key.
 
 ---
 

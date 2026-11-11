@@ -1,14 +1,17 @@
 import axios from 'axios';
 
-const baseAxiosInstance = axios.create({
-  baseURL: 'https://api.openweathermap.org/data/2.5/weather'
+// OpenWeatherMap "Current weather data" (free plan). The key is inlined into the
+// public bundle at build time (VITE_*), so use a free-tier key you can rotate.
+export const weatherClient = axios.create({
+  baseURL: 'https://api.openweathermap.org/data/2.5'
 });
 
+// `city` accepts OpenWeatherMap's "City" or "City, CC" (ISO country code) format.
 const getWeatherDataByCity = city => {
-  return baseAxiosInstance.get('/', {
+  return weatherClient.get('/weather', {
     params: {
       q: city,
-      appid: '20f60a20ad90c8349a4f94c44aa6a09b',
+      appid: import.meta.env.VITE_OPENWEATHER_API_KEY,
       units: 'metric'
     }
   });

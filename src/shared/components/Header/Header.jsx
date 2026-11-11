@@ -5,7 +5,7 @@ import './Header.scss';
 const Header = () => {
   return (
     <div className="header-container">
-      <a href="/" className="header-brand">
+      <a href={import.meta.env.BASE_URL} className="header-brand">
         <img src={JobsityBrand} alt="Jobsity-calendar-header-logo" />
       </a>
     </div>

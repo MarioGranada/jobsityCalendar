@@ -11,8 +11,6 @@ const reminder = {
   city: 'Barcelona'
 };
 
-const date = '1-9-2020';
-
 describe('Reminders [Reducer]', () => {
   it('should return the initial state', () => {
     expect(remindersReducer(undefined, {})).toEqual(initialState);

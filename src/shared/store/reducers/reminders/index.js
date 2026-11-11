@@ -7,17 +7,23 @@ const remindersReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.FETCH_REMINDERS:
       return state; // return current list of reminders
-    case actionTypes.ADD_REMINDER:
+    case actionTypes.ADD_REMINDER: {
       const newReminder = action.payload.reminder;
       let currentRemindersByDate = state.items[newReminder.date]
         ? state.items[newReminder.date]
         : [];
+      // next free suffix; using the list length reused ids after a delete
+      const nextIndex =
+        currentRemindersByDate.reduce((max, item) => {
+          const suffix = parseInt(String(item.id).split('_').pop(), 10);
+          return Number.isNaN(suffix) ? max : Math.max(max, suffix);
+        }, -1) + 1;
       dateSchedule = {};
       dateSchedule[newReminder.date] = [
         ...currentRemindersByDate,
         {
           ...newReminder,
-          id: newReminder.date + '_' + currentRemindersByDate.length
+          id: newReminder.date + '_' + nextIndex
         }
       ].sort((a, b) => a.time.localeCompare(b.time));
 
@@ -25,7 +31,8 @@ const remindersReducer = (state = initialState, action) => {
         ...state,
         items: { ...state.items, ...dateSchedule }
       };
-    case actionTypes.UPDATE_REMINDER:
+    }
+    case actionTypes.UPDATE_REMINDER: {
       const updatedReminder = action.payload.reminder;
       reminders = state.items[updatedReminder.date].filter(
         item => item.id !== updatedReminder.id
@@ -38,8 +45,9 @@ const remindersReducer = (state = initialState, action) => {
       ].sort((a, b) => a.time.localeCompare(b.time));
 
       return { ...state, items: { ...state.items, ...dateSchedule } };
+    }
 
-    case actionTypes.REMOVE_REMINDER:
+    case actionTypes.REMOVE_REMINDER: {
       const removeReminder = action.payload.reminder;
       reminders = state.items[removeReminder.date].filter(
         item => item.id !== removeReminder.id
@@ -52,8 +60,9 @@ const remindersReducer = (state = initialState, action) => {
         ...state,
         items: { ...state.items, ...dateSchedule }
       };
+    }
 
-    case actionTypes.REMOVE_REMINDERS_BY_DATE:
+    case actionTypes.REMOVE_REMINDERS_BY_DATE: {
       const currentDateSchedules = { ...state.items };
       delete currentDateSchedules[action.payload.date];
 
@@ -61,6 +70,7 @@ const remindersReducer = (state = initialState, action) => {
         ...state,
         items: { ...currentDateSchedules }
       };
+    }
 
     case actionTypes.OPEN_MODAL:
       return { ...state, shouldDisplayModal: true };

@@ -6,21 +6,21 @@ Compact guide for future OpenCode sessions. It records only the facts an agent i
 
 | Command | Description |
 | --- | --- |
-| `git checkout develop` | Switch to the branch with the implementation. |
 | `yarn install` | Install dependencies. |
-| `yarn start` | Start the app at http://localhost:3000. |
-| `yarn test` | Run the snapshot tests. |
+| `yarn dev` | Start the app at http://localhost:3000/jobsityCalendar/. |
+| `yarn test` | Run Vitest once (`yarn test:watch` to watch). |
+| `yarn build` | Production build to `dist/`. |
 
 ## Requirements
 
-- Node.js 14 or 16 recommended; `node-sass` 4 and CRA 3 do not build cleanly on current Node versions.
-- Yarn 1.x (a `yarn.lock` is committed on `develop`).
-- Internet access for Algolia Places and OpenWeather.
+- Node.js 22.12+ (or 20.19+).
+- Yarn 1.x (a `yarn.lock` is committed).
+- Internet access for Photon (city search) and OpenWeather.
 
 ## Environment
 
-- No environment variables are required for local development.
-- No environment file exists. The OpenWeather key is currently hardcoded on `develop` and should be moved to `REACT_APP_*` before any public deployment.
+- `VITE_OPENWEATHER_API_KEY` in `.env` (git-ignored; template in `.env.example`). CI reads it from the Actions secret of the same name.
+- `.env.test` (committed) holds a dummy key for Vitest. Photon needs no key.
 
 ## Architecture
 
@@ -28,19 +28,22 @@ Compact guide for future OpenCode sessions. It records only the facts an agent i
 - `src/shared/components/Calendar/` — month grid and day selection.
 - `src/shared/components/CalendarForm/` — reminder modal and weather lookup.
 - `src/shared/store/` — Redux reminders state.
+- `src/shared/components/CityAutocomplete/` — Photon-backed city type-ahead (MUI lab Autocomplete).
 - `src/shared/services/weather/` — OpenWeather client.
+- `src/shared/services/places/` — Photon client (`"City, CC"` values).
 
 ## Commands and build order
 
-- Work on `develop`; `master` is only the scaffold.
-- Run `yarn test` after changing components or reducers.
-- Use `yarn build` as the production gate.
+- `master` is the implementation (develop merged 2026-11). Pushes to `master` deploy to GitHub Pages.
+- Run `yarn lint`, `yarn test` and `yarn build` before finishing a change.
 
 ## Conventions and gotchas
 
-- CRA 3 and node-sass 4 are old; modern Node may need `--openssl-legacy-provider` or Node 16.
-- The weather key is hardcoded and must not be treated as a secret in documentation.
-- Algolia Places and OpenWeather are browser-side calls; they fail visibly when offline.
+- React 16.14 uses the classic JSX runtime (`vite.config.mjs`); keep `import React` in JSX files.
+- Tests freeze the date at 2020-01-20 (`src/test/utils.jsx`) so DayPicker snapshots are stable.
+- Calendar keys `CalendarForm` with a counter so each open remounts with fresh state; do not sync props into state with effects.
+- Day keys come from `toLocaleDateString()` and depend on the browser locale.
+- Photon's public instance is fair-use: keep the debounce and small `limit`.
 
 ## Memory
 

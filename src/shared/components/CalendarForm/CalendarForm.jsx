@@ -10,7 +10,7 @@ import {
   Button,
   Modal
 } from '@material-ui/core';
-import AlgoliaPlaces from 'algolia-places-react';
+import CityAutocomplete from '../CityAutocomplete/CityAutocomplete';
 import './CalendarForm.scss';
 
 import {
@@ -28,35 +28,41 @@ const CalendarForm = ({
 }) => {
   const dispatch = useDispatch();
 
-  const [formState, setFormState] = useState({});
-
-  const [selectedCity, setSelectedCity] = useState('');
-
-  const [cityForecast, setCityForecast] = useState('');
-
-  const isModalOpen = useSelector(state => state.reminders.shouldDisplayModal);
-
-  useEffect(() => {
-    let initialFormState = isUpdatingReminder
+  // Calendar remounts this form (via `key`) for every new selection, so the
+  // initial state can be derived from props once instead of synced in an effect.
+  const [formState, setFormState] = useState(() =>
+    isUpdatingReminder
       ? selectedReminder
       : {
           time: '07:30',
           title: '',
           username: '',
           color: 'red'
-        };
-    setFormState(initialFormState);
-    setSelectedCity((selectedReminder && selectedReminder.city) || '');
-  }, [selectedDate, selectedReminder, isUpdatingReminder]);
+        }
+  );
+
+  const [selectedCity, setSelectedCity] = useState(
+    (selectedReminder && selectedReminder.city) || ''
+  );
+
+  const [cityForecast, setCityForecast] = useState(null);
+
+  const isModalOpen = useSelector(state => state.reminders.shouldDisplayModal);
 
   useEffect(() => {
-    if (selectedCity) {
-      getWeatherDataByCity(selectedCity).then(({ data }) => {
-        setCityForecast(data.weather[0]);
+    if (!selectedCity) return undefined;
+    let active = true;
+    getWeatherDataByCity(selectedCity)
+      .then(({ data }) => {
+        if (active) setCityForecast(data.weather[0]);
+      })
+      .catch(() => {
+        // unknown city, network error or missing API key: show no forecast
+        if (active) setCityForecast(null);
       });
-    } else {
-      setCityForecast(null);
-    }
+    return () => {
+      active = false;
+    };
   }, [selectedCity]);
 
   return (
@@ -65,6 +71,7 @@ const CalendarForm = ({
         <form noValidate autoComplete="off">
           <FormControl className="calendar-form-control">
             <TextField
+              id="reminder-date"
               disabled
               label="Date *"
               value={selectedDate}
@@ -75,6 +82,7 @@ const CalendarForm = ({
           </FormControl>
           <FormControl className="calendar-form-control">
             <TextField
+              id="reminder-username"
               label="Username"
               value={formState.username}
               onChange={e => {
@@ -86,6 +94,7 @@ const CalendarForm = ({
           </FormControl>
           <FormControl className="calendar-form-control">
             <TextField
+              id="reminder-title"
               label="Reminder title"
               inputProps={{
                 maxLength: 30
@@ -104,11 +113,11 @@ const CalendarForm = ({
               <div>City: {selectedCity}</div>
               <div>
                 City Forecast:{' '}
-                {cityForecast ? (
+                {selectedCity && cityForecast ? (
                   <span>
                     {cityForecast.main} - {cityForecast.description}{' '}
                     <img
-                      src={`http://openweathermap.org/img/w/${cityForecast.icon}.png`}
+                      src={`https://openweathermap.org/img/w/${cityForecast.icon}.png`}
                       alt="forecast_icon"
                     />
                   </span>
@@ -116,23 +125,18 @@ const CalendarForm = ({
               </div>
             </div>
 
-            <AlgoliaPlaces
-              placeholder="Preferred city *"
-              language="en"
-              type="city"
-              onChange={({ suggestion }) => {
-                setSelectedCity(suggestion.name);
-              }}
-              onClear={() => {
-                setSelectedCity('');
+            <CityAutocomplete
+              onChange={city => {
+                setSelectedCity(city);
               }}
             />
           </FormControl>
           <FormControl className="calendar-form-control">
             <TextField
+              id="reminder-time"
               label="Time *"
               type="time"
-              defaultValue={formState.time}
+              value={formState.time || ''}
               InputLabelProps={{
                 shrink: true
               }}
@@ -148,6 +152,7 @@ const CalendarForm = ({
           <FormControl className="calendar-form-control">
             <FormLabel component="legend">Priority level (color) *</FormLabel>
             <RadioGroup
+              name="reminder-color"
               onChange={e => {
                 setFormState({ ...formState, color: e.target.value });
               }}

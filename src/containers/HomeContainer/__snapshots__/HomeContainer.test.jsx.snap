@@ -1,86 +1,63 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`App should be rendered 1`] = `
-<div
-  className="App"
->
+exports[`HomeContainer [Container] > should be rendered 1`] = `
+<DocumentFragment>
   <div
-    className="header-container"
-  >
-    <a
-      className="header-brand"
-      href="/"
-    >
-      <img
-        alt="Jobsity-calendar-header-logo"
-        src={
-          Object {
-            "process": [Function],
-          }
-        }
-      />
-    </a>
-  </div>
-  <div
-    className="home-container"
+    class="home-container"
   >
     <div
-      className="jobsity-calendar-container"
+      class="jobsity-calendar-container"
     >
       <div
-        className="DayPicker DayPicker--interactionDisabled"
+        class="DayPicker DayPicker--interactionDisabled"
         lang="en"
       >
         <div
-          className="DayPicker-wrapper"
-          onKeyDown={[Function]}
-          tabIndex={0}
+          class="DayPicker-wrapper"
+          tabindex="0"
         >
           <div
-            className="DayPicker-NavBar"
+            class="DayPicker-NavBar"
           >
             <span
               aria-label="Previous Month"
-              className="DayPicker-NavButton DayPicker-NavButton--prev DayPicker-NavButton--interactionDisabled"
+              class="DayPicker-NavButton DayPicker-NavButton--prev DayPicker-NavButton--interactionDisabled"
               role="button"
-              tabIndex="0"
+              tabindex="0"
             />
             <span
               aria-label="Next Month"
-              className="DayPicker-NavButton DayPicker-NavButton--next"
-              onClick={[Function]}
-              onKeyDown={[Function]}
+              class="DayPicker-NavButton DayPicker-NavButton--next"
               role="button"
-              tabIndex="0"
+              tabindex="0"
             />
           </div>
           <div
-            className="DayPicker-Months"
+            class="DayPicker-Months"
           >
             <div
-              className="DayPicker-Month"
+              class="DayPicker-Month"
               role="grid"
             >
               <div
-                className="DayPicker-Caption"
+                aria-live="polite"
+                class="DayPicker-Caption"
                 role="heading"
               >
-                <div
-                  onKeyUp={[Function]}
-                >
+                <div>
                   January 2020
                 </div>
               </div>
               <div
-                className="DayPicker-Weekdays"
+                class="DayPicker-Weekdays"
                 role="rowgroup"
               >
                 <div
-                  className="DayPicker-WeekdaysRow"
+                  class="DayPicker-WeekdaysRow"
                   role="row"
                 >
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -90,7 +67,7 @@ exports[`App should be rendered 1`] = `
                     </abbr>
                   </div>
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -100,7 +77,7 @@ exports[`App should be rendered 1`] = `
                     </abbr>
                   </div>
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -110,7 +87,7 @@ exports[`App should be rendered 1`] = `
                     </abbr>
                   </div>
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -120,7 +97,7 @@ exports[`App should be rendered 1`] = `
                     </abbr>
                   </div>
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -130,7 +107,7 @@ exports[`App should be rendered 1`] = `
                     </abbr>
                   </div>
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -140,7 +117,7 @@ exports[`App should be rendered 1`] = `
                     </abbr>
                   </div>
                   <div
-                    className="DayPicker-Weekday"
+                    class="DayPicker-Weekday"
                     role="columnheader"
                   >
                     <abbr
@@ -152,25 +129,23 @@ exports[`App should be rendered 1`] = `
                 </div>
               </div>
               <div
-                className="DayPicker-Body"
+                class="DayPicker-Body"
                 role="rowgroup"
               >
                 <div
-                  className="DayPicker-Week"
+                  class="DayPicker-Week"
                   role="row"
                 >
                   <div
-                    aria-disabled={true}
+                    aria-disabled="true"
                     aria-label="Sun Dec 29 2019"
-                    aria-selected={false}
-                    className="DayPicker-Day DayPicker-Day--outside"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day DayPicker-Day--outside"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_12-29-2019"
                     >
                       <span>
@@ -178,15 +153,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="12-29-2019"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -195,16 +168,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -215,22 +185,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={true}
+                    aria-disabled="true"
                     aria-label="Mon Dec 30 2019"
-                    aria-selected={false}
-                    className="DayPicker-Day DayPicker-Day--outside"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day DayPicker-Day--outside"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_12-30-2019"
                     >
                       <span>
@@ -238,15 +206,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="12-30-2019"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -255,16 +221,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -275,22 +238,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={true}
+                    aria-disabled="true"
                     aria-label="Tue Dec 31 2019"
-                    aria-selected={false}
-                    className="DayPicker-Day DayPicker-Day--outside"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day DayPicker-Day--outside"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_12-31-2019"
                     >
                       <span>
@@ -298,15 +259,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="12-31-2019"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -315,16 +274,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -335,22 +291,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Wed Jan 01 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={0}
+                    tabindex="0"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-1-2020"
                     >
                       <span>
@@ -358,15 +312,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-1-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -375,16 +327,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -395,22 +344,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Thu Jan 02 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-2-2020"
                     >
                       <span>
@@ -418,15 +365,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-2-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -435,16 +380,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -455,22 +397,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Fri Jan 03 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-3-2020"
                     >
                       <span>
@@ -478,15 +418,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-3-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -495,16 +433,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -515,22 +450,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sat Jan 04 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-4-2020"
                     >
                       <span>
@@ -538,15 +471,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-4-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -555,16 +486,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -575,27 +503,25 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                 </div>
                 <div
-                  className="DayPicker-Week"
+                  class="DayPicker-Week"
                   role="row"
                 >
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sun Jan 05 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-5-2020"
                     >
                       <span>
@@ -603,15 +529,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-5-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -620,16 +544,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -640,22 +561,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Mon Jan 06 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-6-2020"
                     >
                       <span>
@@ -663,15 +582,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-6-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -680,16 +597,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -700,22 +614,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Tue Jan 07 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-7-2020"
                     >
                       <span>
@@ -723,15 +635,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-7-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -740,16 +650,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -760,22 +667,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Wed Jan 08 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-8-2020"
                     >
                       <span>
@@ -783,15 +688,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-8-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -800,16 +703,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -820,22 +720,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Thu Jan 09 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-9-2020"
                     >
                       <span>
@@ -843,15 +741,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-9-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -860,16 +756,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -880,22 +773,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Fri Jan 10 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-10-2020"
                     >
                       <span>
@@ -903,15 +794,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-10-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -920,16 +809,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -940,22 +826,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sat Jan 11 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-11-2020"
                     >
                       <span>
@@ -963,15 +847,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-11-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -980,16 +862,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1000,27 +879,25 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                 </div>
                 <div
-                  className="DayPicker-Week"
+                  class="DayPicker-Week"
                   role="row"
                 >
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sun Jan 12 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-12-2020"
                     >
                       <span>
@@ -1028,15 +905,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-12-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1045,16 +920,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1065,22 +937,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Mon Jan 13 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-13-2020"
                     >
                       <span>
@@ -1088,15 +958,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-13-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1105,16 +973,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1125,22 +990,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Tue Jan 14 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-14-2020"
                     >
                       <span>
@@ -1148,15 +1011,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-14-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1165,16 +1026,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1185,22 +1043,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Wed Jan 15 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-15-2020"
                     >
                       <span>
@@ -1208,15 +1064,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-15-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1225,16 +1079,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1245,22 +1096,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Thu Jan 16 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-16-2020"
                     >
                       <span>
@@ -1268,15 +1117,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-16-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1285,16 +1132,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1305,22 +1149,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Fri Jan 17 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-17-2020"
                     >
                       <span>
@@ -1328,15 +1170,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-17-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1345,16 +1185,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1365,22 +1202,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sat Jan 18 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-18-2020"
                     >
                       <span>
@@ -1388,15 +1223,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-18-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1405,16 +1238,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1425,27 +1255,25 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                 </div>
                 <div
-                  className="DayPicker-Week"
+                  class="DayPicker-Week"
                   role="row"
                 >
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sun Jan 19 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-19-2020"
                     >
                       <span>
@@ -1453,15 +1281,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-19-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1470,16 +1296,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1490,22 +1313,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Mon Jan 20 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day DayPicker-Day--today"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day DayPicker-Day--today"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-20-2020"
                     >
                       <span>
@@ -1513,15 +1334,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-20-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1530,16 +1349,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1550,22 +1366,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Tue Jan 21 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-21-2020"
                     >
                       <span>
@@ -1573,15 +1387,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-21-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1590,16 +1402,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1610,22 +1419,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Wed Jan 22 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-22-2020"
                     >
                       <span>
@@ -1633,15 +1440,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-22-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1650,16 +1455,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1670,22 +1472,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Thu Jan 23 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-23-2020"
                     >
                       <span>
@@ -1693,15 +1493,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-23-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1710,16 +1508,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1730,22 +1525,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Fri Jan 24 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-24-2020"
                     >
                       <span>
@@ -1753,15 +1546,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-24-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1770,16 +1561,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1790,22 +1578,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sat Jan 25 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-25-2020"
                     >
                       <span>
@@ -1813,15 +1599,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-25-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1830,16 +1614,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1850,27 +1631,25 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                 </div>
                 <div
-                  className="DayPicker-Week"
+                  class="DayPicker-Week"
                   role="row"
                 >
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Sun Jan 26 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-26-2020"
                     >
                       <span>
@@ -1878,15 +1657,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-26-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1895,16 +1672,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1915,22 +1689,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Mon Jan 27 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-27-2020"
                     >
                       <span>
@@ -1938,15 +1710,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-27-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -1955,16 +1725,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -1975,22 +1742,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Tue Jan 28 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-28-2020"
                     >
                       <span>
@@ -1998,15 +1763,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-28-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -2015,16 +1778,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -2035,22 +1795,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Wed Jan 29 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-29-2020"
                     >
                       <span>
@@ -2058,15 +1816,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-29-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -2075,16 +1831,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -2095,22 +1848,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Thu Jan 30 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-30-2020"
                     >
                       <span>
@@ -2118,15 +1869,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-30-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -2135,16 +1884,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -2155,22 +1901,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={false}
+                    aria-disabled="false"
                     aria-label="Fri Jan 31 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_1-31-2020"
                     >
                       <span>
@@ -2178,15 +1922,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="1-31-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -2195,16 +1937,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -2215,22 +1954,20 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
                   <div
-                    aria-disabled={true}
+                    aria-disabled="true"
                     aria-label="Sat Feb 01 2020"
-                    aria-selected={false}
-                    className="DayPicker-Day DayPicker-Day--outside"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                    aria-selected="false"
+                    class="DayPicker-Day DayPicker-Day--outside"
                     role="gridcell"
-                    tabIndex={-1}
+                    tabindex="-1"
                   >
                     <div
-                      className="day-box"
+                      class="day-box"
                       id="day-box_2-1-2020"
                     >
                       <span>
@@ -2238,15 +1975,13 @@ exports[`App should be rendered 1`] = `
                       </span>
                       <br />
                       <div
-                        className="date-buttons-row"
+                        class="date-buttons-row"
                       >
                         <svg
                           aria-hidden="true"
-                          className="MuiSvgIcon-root calendar-icon"
+                          class="MuiSvgIcon-root calendar-icon"
                           focusable="false"
                           label="2-1-2020"
-                          onClick={[Function]}
-                          role="presentation"
                           variant="primary"
                           viewBox="0 0 24 24"
                         >
@@ -2255,16 +1990,13 @@ exports[`App should be rendered 1`] = `
                           />
                         </svg>
                         <span
-                          className="clear-date-label"
-                          onClick={[Function]}
+                          class="clear-date-label"
                         >
-                          Clear
-                           
+                          Clear 
                           <svg
                             aria-hidden="true"
-                            className="MuiSvgIcon-root calendar-icon clear-icon"
+                            class="MuiSvgIcon-root calendar-icon clear-icon"
                             focusable="false"
-                            role="presentation"
                             variant="primary"
                             viewBox="0 0 24 24"
                           >
@@ -2275,7 +2007,7 @@ exports[`App should be rendered 1`] = `
                         </span>
                       </div>
                       <div
-                        className="date-reminders-container"
+                        class="date-reminders-container"
                       />
                     </div>
                   </div>
@@ -2287,19 +2019,5 @@ exports[`App should be rendered 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="footer-container"
-  >
-    <span>
-      Author: 
-    </span>
-    <a
-      href="https://github.com/MarioGranada/jobsityCalendar"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Mario Granada
-    </a>
-  </div>
-</div>
+</DocumentFragment>
 `;
